@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Casas rurales</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+</head>
+<body id="cuerpo">
+    <header id="cabecera">
+        <h1 id="titulo_principal">Casas rurales</h1>
+    </header>
+    <hr id="separador_cabecera">
+        <div class="galeria">
+            <picture class="cabecera_casas">
+                <!--<source-->
+                        <!--media="(min-width: 683px)"-->
+                        <!--srcset="images/galeria_casa1.png">-->
+                <!--<source-->
+                <!--media="(min-width: 900px)"-->
+                <!--srcset="images/galeria_casa1_b.jpg">-->
+                <img src="images/galeria_casa1.jpg" alt="Finca Mª Luisa" title="Finca Mª Luisas"/>
+                <div class="destacado">Destacado</div>
+            </picture>
+            <picture class="cabecera_casas">
+                <!--<source-->
+                        <!--media="(min-width: 900px)"-->
+                        <!--srcset="images/galeria_casa2_b.jpg">-->
+                <!--<source-->
+                        <!--media="(min-width: 400px)"-->
+                        <!--srcset="images/galeria_casa2.png">-->
+                <img src="images/galeria_casa2.jpg" alt="Cortijo 'El Molino'" title="Cortijo 'El Molino'"/>
+                <div class="destacado">Destacado</div>
+            </picture>
+            <picture class="cabecera_casas">
+                <!--<source-->
+                        <!--media="(min-width: 900px)"-->
+                        <!--srcset="images/galeria_casa3_b.jpg">-->
+                <!--<source-->
+                        <!--media="(min-width: 400px)"-->
+                        <!--srcset="images/galeria_casa3.png">-->
+                <img src="images/galeria_casa3.jpg" alt="La Canaleja" title="La Canaleja"/>
+                <div class="destacado">Destacado</div>
+            </picture>
+            <picture class="cabecera_casas ultima_foto_galeria">
+                <!--<source-->
+                        <!--media="(min-width: 900px)"-->
+                        <!--srcset="images/galeria_casa4_b.jpg">-->
+                <!--<source-->
+                        <!--media="(min-width: 400px)"-->
+                        <!--srcset="images/galeria_casa4.png">-->
+                <img src="images/galeria_casa4.jpg" alt="Santa Ana" title="Santa Ana"/>
+                <div class="destacado">Destacado</div>
+            </picture>
+        </div>
+    <hr id="separador:galeria">
+    <div id="contenedor">
+        <aside>
+            <form id="form_buscar_casa_rural" action="#">
+                <div id="buscador_huespedes">
+                    <label class="oculto">Destino: </label>
+                    <input type="search" id="buscarCasa" placeholder="Buscar...">
+                    <label class="oculto">Personas: </label>
+                    <select name="tipoAlojamiento" id="tipoAlojamiento">
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="1" selected="selected">4 personas</option>
+                        <option value="1">5 personas</option>
+                        <option value="1">6 personas</option>
+                        <option value="1">7 personas</option>
+                        <option value="1">8 personas</option>
+                        <option value="1">9 personas</option>
+                        <option value="1">10 personas</option>
+                        <option value="1">11+ personas </option>
+                    </select>
+                </div>
+                <div id="entrada_salida">
+                    <label >Entrada</label>
+                    <label>Salida</label>
+                </div>
+                <div id="inputs_entrada_salida">
+                    <label class="oculto">Entrada: </label><input type="date" id="fechaSalida" placeholder="22/01/2016">
+                    <label class="oculto">Salida: </label><input type="date" id="fechaEntrada" placeholder="15/01/2016">
+                </div>
+                <div id="div_filtro">
+                    <label for="filtro">Filtro: </label>
+                    <select name="filtro" id="filtro">
+                        <option value="1">Menor precio</option>
+                        <option value="2"  selected="selected">Más populares</option>
+                        <option value="3">Mejor puntuación</option>
+                        <option value="1">Cercanía a la playa</option>
+                        <option value="1">En la sierra</option>
+                        <option value="1">Mayor precio</option>
+                        <option value="1">Más grandes</option>
+                        <option value="1">Más pequeñas</option>
+                    </select>
+                </div>
+                <div id="div_buscar">
+                     <input type="submit" id="enviar_busqueda" name="enviar_busqueda" value="Buscar">
+                </div>
+            </form>
+        </aside>
+        <hr>
+        <main id="main">
+            <section id="casas">
+                <article>
+                    <div class="info_casa">
+                        <picture class="foto_casa">
+                            <source
+                                    media="(min-width: 683px)"
+                                    srcset="images/casa1_b.jpg">
+                            <source
+                                    media="(min-width: 410px)"
+                                    srcset="images/casa1_m.jpg">
+                            <source
+                                    media="(min-width: 250px)"
+                                    srcset="images/casa1_s.jpg">
+                            <img class="image" src="images/casa1_s.jpg" alt="habitación" title="habitación" />
+                        </picture>
+                        <div class="informacion">
+                            <div class="primer_div_casa">
+                                <p class="nombre_casa">Villa San Francisco</p>
+                                <p><img class="estrella_opiniones" src="images/estrella_opiniones.png" alt="opiniones">8'7 (190 opiniones)</p>
+                                <p>49'90 &euro; persona/noche</p>
+                            </div>
+                            <div class="descripcion">
+                                <p>
+                                    Casa rural con chimenea, aire acondicionado, piscina y la mejor fauna y flora de Cádiz</p>
+                            </div>
+                            <div class="caracteristicas">
+                                <p>Fotos</p><p>Resumen</p><p>Opiniones</p><p class="mapa">Mapa</p><p>2-15 plazas</p>
+                            </div>
+                            <a href="formulario.html">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="info_casa">
+                        <picture class="foto_casa">
+                            <source
+                                    media="(min-width: 683px)"
+                                    srcset="images/casa2_b.jpg">
+                            <source
+                                    media="(min-width: 410px)"
+                                    srcset="images/casa2_m.jpg">
+                            <source
+                                    media="(min-width: 250px)"
+                                    srcset="images/casa2_s.jpg">
+                            <img class="image" src="images/casa2_s.jpg" alt="habitación" title="habitación" />
+                        </picture>
+                        <div class="informacion">
+                            <div class="primer_div_casa">
+                                <p class="nombre_casa">Casa rural "La Moraleja"</p>
+                                <p><img class="estrella_opiniones" src="images/estrella_opiniones.png" alt="opiniones">8'5 (200 opiniones)</p>
+                                <p>60 &euro; persona/noche</p>
+                            </div>
+                            <div class="descripcion">
+                                <p>
+                                    Relax en Sierra Morena, con piscina. Una temperatura media de 30º. Hasta 2 niños gratis</p>
+                            </div>
+                            <div class="caracteristicas">
+                                <p>Fotos</p><p>Resumen</p><p>Opiniones</p><p class="mapa">Mapa</p><p>2-18 plazas</p>
+                            </div>
+                            <a href="formulario.html">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="info_casa">
+                        <picture class="foto_casa">
+                            <source
+                                    media="(min-width: 683px)"
+                                    srcset="images/casa3_b.jpg">
+                            <source
+                                    media="(min-width: 410px)"
+                                    srcset="images/casa3_m.jpg">
+                            <source
+                                    media="(min-width: 250px)"
+                                    srcset="images/casa3_s.jpg">
+                            <img class="image" src="images/casa2_s.jpg" alt="habitación" title="habitación" />
+                        </picture>
+                        <div class="informacion">
+                            <div class="primer_div_casa">
+                                <p class="nombre_casa">Cortijo "El Molino"</p>
+                                <p><img class="estrella_opiniones" src="images/estrella_opiniones.png" alt="opiniones">9'2 (112 opiniones)</p>
+                                <p>60 &euro; persona/noche</p>
+                            </div>
+                            <div class="descripcion">
+                                <p>A 30km de la playa de Málaga. Jacuzzi y piscina climatizada. Columpios para los niños</p>
+                            </div>
+                            <div class="caracteristicas">
+                                <p>Fotos</p><p>Resumen</p><p>Opiniones</p><p class="mapa">Mapa</p><p>4-25 plazas</p>
+                            </div>
+                            <a href="formulario.html">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+<footer><p>© Copyright 2016 – Javier Benítez del Pozo</p></footer>
+</body>
+</html>

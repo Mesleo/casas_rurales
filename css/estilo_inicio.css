@@ -1,0 +1,21 @@
+#images-index{
+    position: relative;
+    height: 100%;
+}
+
+#principal{
+    display: none;
+}
+
+.casa-inicio{
+    min-width: 100%;
+}
+
+.image{
+    min-width: 100%;
+    height: 100% !important;
+}
+
+.casa-4{
+    display: none;
+}

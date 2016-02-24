@@ -1,0 +1,1052 @@
+a {
+    text-decoration: none;
+}
+
+.aceptar_atras {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.aceptar_atras input {
+    width: 47%;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.aceptar_atras input, #mas_menos input {
+    background-color: #C8E6C9;
+    border: 2px outset #6ba65f;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 1px #a3a3a3;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.aceptar_atras input:active, #mas_menos input:active {
+    background-color: #6e846f;
+    border: 2px inset #53834a;
+    color: white;
+    box-shadow: none;
+}
+
+.aceptar_atras input:not(#enviar_reserva) {
+    margin-right: 6%;
+}
+
+aside {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+#buscador_huespedes, #entrada_salida, #inputs_entrada_salida, #div_filtro {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    margin-bottom: 3px;
+}
+
+#div_filtro label, #filtro {
+    width: 45%;
+    margin-left: 2%;
+    border-radius: 5px;
+    display: flex;
+    font-size: 1em;
+    flex-direction: row;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#buscarCasa, #tipoAlojamiento {
+    width: 45%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.caracteristicas, .descripcion {
+    display: none;
+}
+
+#inputs_entrada_salida input {
+    width: 45%;
+    margin-left: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+#entrada_salida label {
+    width: 45%;
+    margin-left: 2%;
+    font-size: 1em;
+}
+
+#cabecera {
+    background-color: #4caf50;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px groove #387038;
+}
+
+.cabecera_casas {
+    width: 100%;
+}
+
+.campos_formularios:not(.aceptar_atras) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.campos_formularios div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#casas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#casas article {
+    width: 100%;
+}
+
+.campos_formularios div > input:not(.dc_nCuenta) {
+    width: 20%;
+    margin-right: 2%;
+}
+
+#contenedor {
+    width: 100%;
+}
+
+#cuerpo {
+    background: linear-gradient(to bottom, #e8f5e9, #81c784, #43a047, #1b5e20) fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#dc {
+    width: 16%;
+    margin-right: 2%;
+}
+
+#div_buscar {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#dialog-confirm{
+    display: none;
+}
+
+.ui-dialog{
+    border: 5px outset #F73017;
+    padding: 0;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-helper-clearfix{
+    border-radius: 0;
+    background-color: #67B021;
+}
+
+.ui-button{
+    background-color: #ebebeb !important;
+    color: #0b1123 !important;
+    border: 2px outset #433F38;
+}
+
+.ui-button:active{
+    background-color: #c0c0c0 !important;
+    color: #1e2568 !important;
+    border: 2px inset;
+}
+
+.entrar_desktop {
+    display: none;
+}
+
+.entrar {
+    width: 33%;
+    text-align: center;
+    height: 8%;
+    border-radius: 25px;
+    border: 3px inset;
+    top: 45%;
+    left: 33%;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    overflow: hidden;
+    background: #d11e1d;
+    color: white;
+    transition-property: color;
+    transition-duration: 0.3s;
+    line-height: 250%;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.entrar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/fondo_boton_entrar.png");
+    border-image: url("../images/background_button_enter.png");
+    border-radius: 25%;
+    border: 3px outset;
+    color: #000;
+    transform: scale(2);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.entrar:hover, .entrar:focus, .entrar:active {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.entrar:hover:before, .entrar:focus:before, .entrar:active:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+#enviar_busqueda {
+    width: 75%;
+    margin: 0 auto;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: #727272;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    outline: none;
+}
+
+#enviar_busqueda:active {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.estrella_opiniones {
+    width: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1b5e20;
+}
+
+.error_js{
+    font-size: 1.3em;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+footer p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: .9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#form_buscar_casa_rural {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#form_buscar_casa_rural input, #form_buscar_casa_rural select {
+    border-radius: 8px;
+}
+
+
+.foto_casa {
+    margin: 2% 0 2% 2%;
+    padding: 0;
+    height: 100px;
+    width: 35%;
+    display: inline-flex;
+    position: relative;
+    border: 1px outset #525b5f;
+    border-radius: 5px;
+}
+
+.image {
+    width: 100%;
+}
+
+.info_casa a {
+    display: block;
+    width: 60%;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0;
+    margin-top: 2px;
+    background-color: #FFEB3B;
+    border: 2px outset #FBC02D;
+    /*padding: 5px 30px 5px 30px;*/
+    color: #525252;
+    font-family: 'Poppins';
+    margin-bottom: 5px;
+}
+
+.info_casa a:active {
+    color: #252525;
+    background-color: #cdb935;
+    border: 2px inset #c99728;
+}
+
+a:link {
+    text-decoration: none;
+    color: #0000cc;
+}
+
+header {
+    width: 100%;
+}
+
+hr {
+    margin: 5px;
+    clear: both;
+}
+
+.imagen_principal {
+    width: 100%;
+    background-image: url("../images/fondo_principal_s.png");
+    background-repeat: no-repeat;
+}
+
+.info_casa {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    border-top: 1px solid #0b1123;
+    border-bottom: 1px solid #0b1123;
+    font-size: .8em;
+}
+
+.info_casa picture{
+    margin: 5px 3% 7px 3%;
+}
+
+.informacion {
+    width: 58%;
+    max-width: 58%;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 2% 3% 7%;
+}
+
+.informacion p {
+    width: 100%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#mas_menos {
+    display: flex;
+    flex-direction: row;
+}
+
+#mas_menos input {
+    width: 17%;
+    margin-left: 4%;
+    font-size: 1.4em;
+}
+
+#mostrar_numero_personas {
+    width: 7%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#main {
+    display: flex;
+}
+
+#menos {
+    margin-right: 4%;
+}
+
+#nCuenta {
+    width: 38%;
+}
+
+.oculto{
+    display: none;
+}
+
+.pajaro {
+    position: absolute;
+    width: 30px;
+    height: 27px;
+    float: right;
+    right: -30px;
+    background: url(../images/pajaro.gif);
+    -moz-animation: pajaro1 17s infinite linear;
+    -webkit-animation: pajaro1 17s infinite linear;
+    animation: pajaro1 17s infinite linear;
+}
+
+@-moz-keyframes pajaro1 {
+    0% {
+        right: -7px;
+        top: 24%;
+        -webkit-transform: scale(0.6);
+    }
+    100% {
+        right: 115%;
+        top: 21%;
+        -webkit-transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes pajaro1 {
+    0% {
+        right: -7px;
+        top: 24%;
+        -webkit-transform: scale(0.6);
+    }
+    100% {
+        right: 115%;
+        top: 21%;
+        -webkit-transform: scale(0.9);
+    }
+}
+
+.pajaro2 {
+    -webkit-animation: pajaro2 20s infinite linear;
+    -moz-animation: pajaro2 20s infinite linear;
+    animation: pajaro2 20s infinite linear;
+}
+
+@-webkit-keyframes pajaro2 {
+    0% {
+        right: -20px;
+        top: 18%;
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        right: 105%;
+        top: 20%;
+        -webkit-transform: scale(0.8);
+    }
+}
+
+@-moz-keyframes pajaro2 {
+    0% {
+        right: -20px;
+        top: 18%;
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        right: 105%;
+        top: 20%;
+        -webkit-transform: scale(0.8);
+    }
+}
+
+#pantalla_principal {
+    width: 100%;
+}
+
+#principal {
+    width: 100%;
+}
+
+#principal p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+.galeria {
+    display: none;
+}
+
+.galeria img {
+    display: none;
+}
+
+#titulo_pagina_principal {
+    width: 70%;
+    margin: auto;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-weight: bold;
+    font-size: 2.4em;
+}
+
+#titulo_principal {
+    margin: auto;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/**
+*
+* Para resoluciones con una anchura mínima de 410px
+*
+*/
+@media screen and (min-width: 410px) {
+
+    .aceptar_atras {
+        height: 45px;
+        margin-top: 5%;
+    }
+
+    .aceptar_atras input {
+        width: 45%;
+        height: 40px;
+        border: 0;
+    }
+
+    .aceptar_atras input, #mas_menos input {
+        letter-spacing: normal;
+        background: linear-gradient(220deg, #f4f43f, #d6d63a);
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.5em;
+        box-shadow: 0px 4px 0 #819F45;
+        text-shadow: 2px 2px 1px #E1FEA6;
+    }
+
+    .aceptar_atras input:active, #mas_menos input:active {
+        position: relative;
+        top: 3px;
+        box-shadow: 0px 2px 0 #819F45;
+        color: #1b5e20;
+        background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;;
+    }
+
+    .aceptar_atras input:not(#enviar_reserva) {
+        margin-right: 6%;
+    }
+
+    #form_buscar_casa_rural {
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    #form_buscar_casa_rural div {
+        width: 90%;
+        display: inline-flex;
+    }
+
+    .campos_formularios:not(.aceptar_atras) {
+        display: block;
+    }
+
+    .campo_bloque:not(.aceptar_atras) {
+        display: block;
+
+    }
+
+    .campo_bloque label, .campo_bloque input {
+        display: block;
+        width: 100%;
+    }
+
+    .campo_enlinea {
+        display: block;
+    }
+
+    .campo_enlinea label {
+        width: 33%;
+        display: inline-block;
+    }
+
+    .campo_enlinea input {
+        width: 67%;
+        display: inline-block;
+    }
+
+    #div_buscar {
+        margin-bottom: 10px;
+    }
+
+    #div_buscar input {
+        width: 50%;
+        letter-spacing: normal;
+        height: 40px;
+        background: linear-gradient(220deg, #f4f43f, #d6d63a);
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.7em;
+        box-shadow: 0px 4px 0 #819F45;
+        text-shadow: 1px 1px 1px #E1FEA6;
+    }
+
+    #div_buscar input:active {
+        position: relative;
+        top: 3px;
+        box-shadow: 0px 2px 0 #819F45;
+        background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;
+    }
+
+    .foto_casa {
+        margin: 2% 0 2% 2%;
+        padding: 0;
+        width: 40%;
+        height: 130px;
+        display: inline-flex;
+        position: relative;
+        border: 1px outset #525b5f;
+        border-radius: 5px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .imagen_principal {
+        width: 100%;
+        background: url("../images/fondo_principal.png") fixed;
+        background-repeat: no-repeat;
+    }
+
+    .informacion {
+        width: 58%;
+        max-width: 58%;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 3px 3px 25px;
+        font-size: 1.5em;
+    }
+
+    .informacion p {
+        width: 100%;
+        line-height: 170%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #main {
+        display: flex;
+    }
+
+    #mas_menos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mas_menos label {
+        width: 40%;
+    }
+
+    #mas_menos input {
+        width: 20%;
+        margin-left: 4%;
+        border-radius: 5px;
+        font-size: 1.4em;
+    }
+
+    #principal p {
+        font-size: 18px;
+    }
+
+    #titulo_pagina_principal {
+        font-size: 3em;
+    }
+
+    #titulo_principal {
+        font-size: 3em;
+    }
+}
+
+/**
+*
+* Para resoluciones con una anchura mínima de 869px
+*
+*/
+@media screen and (min-width: 683px) {
+
+    aside {
+        width: 30%;
+    }
+
+    .aceptar_atras input{
+        width: 35%;
+        height: 35px;
+        margin: 0 auto;
+        font-size: 1.2em;
+        background: linear-gradient(220deg, rgba(77, 240, 87, 0.91), #41dc4b);
+        box-shadow: 0px 4px 0 #40c94a;
+        text-shadow: none;
+    }
+
+    .aceptar_atras input:hover{
+        margin: 0 auto;
+        background: linear-gradient(220deg, rgba(71, 205, 81, 0.91), #3eaf47);
+        color: inherit;
+        border: none;
+    }
+
+    .aceptar_atras:after, .aceptar_atras:focus{
+        margin: 0 auto;
+        background: linear-gradient(220deg, rgba(71, 205, 81, 0.91), #3eaf47);
+        color: inherit;
+        border: none;
+    }
+
+    body{
+        font-family: 'Raleway';
+    }
+
+    #cabecera, #contenedor, .galeria, #cuerpo {
+        background: white;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .caracteristicas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .caracteristicas p{
+        display: inline-block;
+        border-top: 1px solid rgba(0, 203, 36, 0.66);
+        border-right: 1px solid rgba(0, 203, 36, 0.66);
+        border-left: 1px solid rgba(0, 203, 36, 0.66);
+        border-radius: 3px;
+        text-align: center;
+        margin: 8% 2% 8px 0;
+        margin-right: 5px;
+        transition: 0.5s;
+        font-size: 12px;
+        padding: 1px 5px 1px 5px;
+        max-height: 15px;
+    }
+
+    .caracteristicas p:hover{
+        background-color: rgba(0, 203, 36, 0.34);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    #casas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #casas article{
+        width: 100%;
+        height: 100%;
+    }
+
+    #contenedor {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .descripcion{
+        display: block;
+    }
+
+    .descripcion, .caracteristicas{
+        font-size: .8em;
+    }
+
+    .destacado{
+        width: 100%;
+        height: 10%;
+        font-size: .9em;
+        position: relative;
+        top: -10%;
+        background-color: rgba(142, 225, 155, 0.4);
+        text-align: center;
+    }
+
+    #div_buscar{
+        width: 60%;
+    }
+
+    #entrada_salida label{
+        display: none;
+    }
+
+    .entrar {
+        display: none;
+    }
+
+    .entrar_desktop {
+        display: block;
+        width: 33%;
+        text-align: center;
+        height: 50px;
+        left: 33%;
+        margin: 0 auto;
+        vertical-align: middle;
+        margin-top: 25%;
+        border-left: 2px inset #685b11;
+        border-bottom: 2px inset #685b11;
+        border-right: 2px outset #685b11;
+        background: #998e2d;
+        color: #f2f2f2;
+        background: linear-gradient(to right, #1e8237, #50e26d);
+        padding: 5px 10px 15px 10px;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 10px;
+        font-size: 2em;
+        border-radius: 2px;
+        position: absolute;
+        box-sizing: border-box;
+        transition: all 500ms ease;
+        transform-style: preserve-3d;
+        border-top: 1px inset;
+    }
+
+    .entrar_desktop:after {
+        top: -100%;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        background: #b9ae2e;
+        border-left: 2px outset #685b11;
+        border-top: 2px outset #685b11;
+        border-right: 2px inset #685b11;
+        background: linear-gradient(to right, #50e26d, #1e8237);
+        border-radius: 2px;
+        padding: 5px 10px 15px 10px;
+        content: 'Entrar';
+        transform-origin: left bottom;
+        transform: rotateX(90deg);
+    }
+
+    .entrar_desktop:hover {
+        transform-origin: center bottom;
+        transform: rotateX(-88deg) translateY(100%);
+    }
+
+    #div_buscar input{
+        font-size: 16px;
+        height: 25px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        font-family: 'Poppins';
+    }
+
+    #form_buscar_casa_rural{
+        padding: 15px;
+        display: block;
+        width: 90%;
+        border: 2px outset #1b6d85;
+        font-size: 14px;
+        background-color: rgba(64, 238, 75, 0.43);
+        box-shadow:  4px 4px 2px 1px rgba(192, 192, 192, 0.85);
+    }
+
+    #form_buscar_casa_rural div:not(#div_buscar){
+        width: 100%;
+        display: block;
+    }
+
+    #form_buscar_casa_rural input:not(#enviar_busqueda), #form_buscar_casa_rural select{
+        display: block;
+        width: 90%;
+        border-radius: 0;
+        border: 2px inset rgba(154, 154, 154, 0.85);
+    }
+
+    #img{
+        width: 100%;
+        background-image: url("../images/fondo_formulario.jpg");
+        /*background-attachment: fixed;*/
+    }
+
+    .foto_casa{
+        width: 20%;
+    }
+
+    .galeria {
+        display: flex;
+        visibility: visible;
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        height: 160px;
+    }
+
+    .galeria picture{
+        width: 23%;
+        border: 3px inset rgba(55, 93, 63, 0.59);
+        height: 170px;
+    }
+
+    .galeria picture:not(.ultima_foto_galeria){
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .galeria img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .info_casa{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .info_casa picture{
+        width: 200px;
+        height: 175px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        width: 75%;
+        padding: 20px;
+    }
+
+    .informacion a{
+        font-size: 1em;
+        width: 35%;
+        border-radius: 10px;
+    }
+
+    .imagen_principal {
+        background-image: url("../images/imagen_principal_pc.png");
+    }
+
+    #main{
+        width: 70%;
+    }
+
+    .oculto{display: block; margin-left: 3%}
+
+    .pajaro, .pajaro2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .primer_div_casa{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .primer_div_casa p{
+        margin-right: 70px;
+    }
+
+    #separador_cabecera {
+        background-color: rgba(2, 74, 11, 0.86);
+        height: 1em;
+        width: 100%;
+    }
+
+    #titulo_pagina_principal {
+        padding: 0;
+        width: 65%;
+        margin: auto;
+        font-size: 60px;
+    }
+
+    #titulo_principal {
+        font-size: 3em;
+    }
+
+
+    #dialog-confirm{
+        display: none;
+    }
+
+    .ui-dialog .ui-dialog-buttonpane{
+        padding: 0;
+    }
+
+    .ui-dialog{
+        width: 60% !important;
+        top: 55% !important;
+        font-size: 1.2em !important;
+        border: 3px outset #F73017;
+        padding: 0;
+    }
+
+    .no-close .ui-dialog-titlebar-close {
+        display: none;
+    }
+
+    .ui-helper-clearfix{
+        border-radius: 0;
+        background-color: #67B021;
+    }
+
+    .ui-button{
+        font-size: .8em !important;
+        background-color: #ebebeb !important;
+        color: #0b1123 !important;
+        border: 2px outset #433F38;
+    }
+
+    .ui-button:active{
+        background-color: #c0c0c0 !important;
+        color: #1e2568 !important;
+        border: 2px inset;
+    }
+}
+
+
