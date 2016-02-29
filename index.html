@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Casas rurales</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
     <link rel="stylesheet" href="css/estilo_inicio.css" type="text/css">
+
+    <!-- Fuentes -->
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+
+    <!-- Scripts -->
     <script src="js/jquery-2.2.0.js" type="text/javascript"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
     <script src="js/dialog_cookies.js" type="text/javascript"></script>
     <script src="js/animate_index.js" type="text/javascript"></script>
 </head>
 <body id="pantalla_principal" class="imagen_principal">
+<noscript>
+<div class="deshabilitado">
+    <h1>JavaScript deshabilitado</h1>
+    <img src="images/doc/error.png" alt="Javascript deshabilitado"/>
+    <p>Javascript está deshabilitado en su navegador web.<br>
+    Por favor, para ver correctamente este sitio, habilite
+        <strong><em>JavaScript</em></strong>.</p>
+    <p>Para ver las instrucciones, haga click
+    <a href="http://www.enable-javascript.com/es/"
+       target="_blank">aquí</a>.</p>
+</div>
+</noscript>
     <main>
         <section id="principal">
             <article>
@@ -33,40 +51,34 @@
             </article>
         </section>
         <section>
-            <article id="images-index">
-                <div id="imagenes-1">
-                    <picture id="c" class="casa-inicio casas-movil casa-1">
-                        <source
-                                media="(min-width: 683px)"
-                                srcset="images/casa1_inicio.png">
-                        <img class="image" src="images/casa1_inicio.png" alt="casa 1" title="casa 1" />
-                    </picture>
-                    <picture class="casa-inicio casas-movil casa-2">
-                        <source
-                                media="(min-width: 683px)"
-                                srcset="images/casa2_inicio.png">
-                        <img class="image" src="images/casa2_inicio.png" alt="casa 2" title="casa 2" />
-                    </picture>
-                </div>
-                <div id="imagenes-2">
-                    <picture class="casa-inicio casas-movil casa-3">
-                        <source
-                                media="(min-width: 683px)"
-                                srcset="images/casa3_inicio.png">
-                        <img class="image" src="images/casa3_inicio.png" alt="casa 3" title="casa 3" />
-                    </picture>
-                    <picture class="casa-inicio casa-4">
-                        <source
-                                media="(min-width: 683px)"
-                                srcset="images/casa4_inicio.png">
-                        <img class="image" src="images/casa4_inicio.png" alt="casa 4" title="casa 4" />
-                    </picture>
-                </div>
-            </article>
+            <picture>
+                <source
+                        media="(min-width: 683px)"
+                        srcset="images/casa1_inicio.png">
+                <img class="image casa-inicio casas-movil casa-1" src="images/casa1_inicio.png" alt="casa 1" title="casa 1" />
+            </picture>
+            <picture>
+                <source
+                        media="(min-width: 683px)"
+                        srcset="images/casa2_inicio.png">
+                <img class="image casa-inicio casas-movil casa-2" src="images/casa2_inicio.png" alt="casa 2" title="casa 2" />
+            </picture>
+            <picture>
+                <source
+                        media="(min-width: 683px)"
+                        srcset="images/casa3_inicio.png">
+                <img class="image casa-inicio casas-movil casa-3" src="images/casa3_inicio.png" alt="casa 3" title="casa 3" />
+            </picture>
+            <picture>
+                <source
+                        media="(min-width: 683px)"
+                        srcset="images/casa4_inicio.png">
+                <img class="image casa-inicio casa-4" src="images/casa4_inicio.png" alt="casa 4" title="casa 4" />
+            </picture>
         </section>
-        <!--<section id="dialog-confirm"  title="Cookies">-->
-            <!--Este sitio usa cookies para mejorar la experiencia de usuario y en tu navegador están desactivadas. Actívalas por favor-->
-        <!--</section>-->
+        <section id="dialog-confirm"  title="Cookies">
+            Este sitio usa cookies para mejorar la experiencia de usuario y en tu navegador están desactivadas. Actívalas por favor
+        </section>
     </main>
 </body>
 </html>

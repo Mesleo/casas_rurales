@@ -1,18 +1,185 @@
+.aceptar_atras input:active, #mas_menos input:active {
+    background-color: #6e846f;
+    border: 2px inset #53834a;
+    box-shadow: none;
+}
+
+.aceptar_atras input:not(#aceptar_reserva) {
+    margin-right: 6%;
+}
+
+.aceptar_atras input, #mas_menos input {
+    background-color: #C8E6C9;
+    border: 2px outset #6ba65f;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 1px #a3a3a3;
+    font-size: 1.1em;
+    outline: none;
+}
+
+
+.campos_formularios:not(.aceptar_atras) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.campos_formularios p {
+    color: red;
+    display: block;
+    margin-left: 10px;
+}
+
+.campos_formularios div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.campos_formularios div > input:not(.dc_nCuenta) {
+    width: 20%;
+    margin-right: 2%;
+}
+
+
+#div_check{
+    display: flex;
+    flex-direction: row;
+}
+
+#div_check label{
+    margin-left: 2%;
+}
+
+#div_check input{
+
+}
 
 #form_reserva {
     width: 100%;
     padding: 2%;
     display: flex;
     flex-direction: column;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 #form_reserva input{
     margin-bottom: 5px;
 }
 
+.aceptar_atras {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.aceptar_atras input {
+    width: 47%;
+    height: 35px;
+    margin-top: 5px;
+}
+
+#mas_menos {
+    display: flex;
+    flex-direction: row;
+}
+
+#mas_menos label{
+width: 30%;
+}
+
+#mas_menos_mostrar{
+    width: 70%;
+    position: relative;
+}
+
+#mas_menos input {
+    width: 20%;
+    font-size: 1.4em;
+}
+
+#mostrar_numero_personas{
+    width: 20%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#menos{
+    margin-right: 7%;
+    margin-left: 30%;
+}
+
+#mas{
+    position: absolute;
+    right: 1%;
+    margin-left: 4%;
+}
 
 @media screen and (min-width: 410px){
+
+
+    .aceptar_atras {
+        height: 45px;
+        margin-top: 5%;
+    }
+
+    .aceptar_atras input {
+        width: 45%;
+        height: 40px;
+        border: 0;
+    }
+
+    .aceptar_atras input, #mas_menos input {
+        letter-spacing: normal;
+        background: linear-gradient(220deg, #f4f43f, #d6d63a);
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.5em;
+        box-shadow: 0px 4px 0 #819F45;
+        text-shadow: 2px 2px 1px #E1FEA6;
+    }
+
+    .aceptar_atras input:active, #mas_menos input:active {
+        top: 3px;
+        box-shadow: 0px 2px 0 #819F45;
+        color: black;
+        background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;;
+    }
+
+    .aceptar_atras input:not(#enviar_reserva) {
+        margin-right: 6%;
+    }
+
+    .campos_formularios:not(.aceptar_atras) {
+        display: block;
+    }
+
+    .campo_bloque:not(.aceptar_atras) {
+        display: block;
+
+    }
+
+    .campo_bloque label, .campo_bloque input {
+        display: block;
+        width: 100%;
+    }
+
+    .campo_enlinea {
+        display: block;
+    }
+
+    .campo_enlinea label {
+        width: 33%;
+        display: inline-block;
+    }
+
+    .campo_enlinea input {
+        width: 67%;
+        display: inline-block;
+    }
+
     #form_reserva {
         width: 95%;
         margin: auto;
@@ -23,12 +190,52 @@
         font-size: 16px;
     }
 
+    #mas_menos label{
+        width: 55%;
+    }
+
+    #mas_menos_mostrar{
+        width: 40;
+    }
 
 }
 
 @media screen and (min-width: 683px){
+
+    .aceptar_atras {
+        height: 45px;
+        margin-top: 5%;
+    }
+
+    .aceptar_atras input {
+        line-height: normal;
+        color: #646464;
+        background-color: #C8E6C9;
+        border: 2px outset #e8e83e;
+        border-radius: 0;
+        transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0.2s;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        font-size: 1.1em;
+        outline: none;
+    }
+
+    .aceptar_atras input:active{
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+        transition-delay: 0s;
+        border: inherit;
+        top: 0;
+        color: #8B6C64;
+    }
+
+    .aceptar_atras input:not(#atras_reserva) {
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+
+
     #form_reserva{
-        width: 40%;
+        width: 60%;
         margin:0 auto;
         border: 0;
         /*border-radius: 15px 2px 15px 2px;*/
@@ -37,35 +244,48 @@
         box-shadow: 2px 2px 1px 1px rgba(205, 205, 205, 0.82);
         background-image: url("../images/fondo_formulario_desenfoque.jpg");
     }
+
     #form_reserva label, #mas_menos{
         color: black;
         font-weight: normal;
+        position: relative;
     }
 
-    #mas_menos input {
-        letter-spacing: normal;
-        background: linear-gradient(220deg, rgba(74, 236, 84, 0.91), #41c54b);
-        box-shadow: 0px 4px 0 #3aa843;
-        border: 0;
-        height: 30px;
-        border-radius: 10px;
-        font-size: 1.5em;
-        text-shadow: none;
+    #mostrar_numero_personas{
+        display: inline-block;
     }
+
+    #mas_menos input{
+        display: inline-block;
+        height: 32px;
+        line-height: normal;
+        color: #646464;
+        background-color: #C8E6C9;
+        border: 2px outset #e8e83e;
+        border-radius: 0;
+        transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0.2s;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        font-size: 1.1em;
+        outline: none;
+    }
+
 
     #mas_menos input:active {
-        letter-spacing: normal;
-        background: linear-gradient(220deg, #48e652, #43d14d);
-        border: 0;
-        border-radius: 10px;
-        font-size: 1.5em;
-        box-shadow: 0px 2px 0 #3fc349;
-
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+        transition-delay: 0s;
+        border: inherit;
+        top: 0;
     }
 
-    #aceptar_atras input{
-        font-size: 1em;
-        width: 25%;
+    #mas_menos_mostrar{
+        width: 55%;
+        position: absolute;
+        right: 0;
+    }
+
+    #menos{
+        margin-right: 2%;
     }
 
 }

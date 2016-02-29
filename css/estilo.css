@@ -2,40 +2,6 @@ a {
     text-decoration: none;
 }
 
-.aceptar_atras {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 2%;
-}
-
-.aceptar_atras input {
-    width: 47%;
-    height: 35px;
-    margin-top: 5px;
-}
-
-.aceptar_atras input, #mas_menos input {
-    background-color: #C8E6C9;
-    border: 2px outset #6ba65f;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    box-shadow: 1px 1px 1px #a3a3a3;
-    font-size: 1.1em;
-    outline: none;
-}
-
-.aceptar_atras input:active, #mas_menos input:active {
-    background-color: #6e846f;
-    border: 2px inset #53834a;
-    color: white;
-    box-shadow: none;
-}
-
-.aceptar_atras input:not(#enviar_reserva) {
-    margin-right: 6%;
-}
-
 aside {
     padding: 0;
     margin: 0;
@@ -103,18 +69,6 @@ body {
     width: 100%;
 }
 
-.campos_formularios:not(.aceptar_atras) {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2%;
-}
-
-.campos_formularios div {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
 #casas {
     display: flex;
     flex-direction: column;
@@ -123,11 +77,6 @@ body {
 
 #casas article {
     width: 100%;
-}
-
-.campos_formularios div > input:not(.dc_nCuenta) {
-    width: 20%;
-    margin-right: 2%;
 }
 
 #contenedor {
@@ -387,29 +336,9 @@ hr {
     padding: 0;
 }
 
-#mas_menos {
-    display: flex;
-    flex-direction: row;
-}
-
-#mas_menos input {
-    width: 17%;
-    margin-left: 4%;
-    font-size: 1.4em;
-}
-
-#mostrar_numero_personas {
-    width: 7%;
-    text-align: center;
-    font-size: 1.4em;
-}
 
 #main {
     display: flex;
-}
-
-#menos {
-    margin-right: 4%;
 }
 
 #nCuenta {
@@ -530,6 +459,12 @@ hr {
     font-weight: bold;
 }
 
+.ui-widget-header {
+    border: 1px solid #d4ccb0;
+    background-image: none;
+    color: #433f38;
+    font-weight: bold;
+}
 /**
 *
 * Para resoluciones con una anchura mínima de 410px
@@ -537,99 +472,6 @@ hr {
 */
 @media screen and (min-width: 410px) {
 
-    .aceptar_atras {
-        height: 45px;
-        margin-top: 5%;
-    }
-
-    .aceptar_atras input {
-        width: 45%;
-        height: 40px;
-        border: 0;
-    }
-
-    .aceptar_atras input, #mas_menos input {
-        letter-spacing: normal;
-        background: linear-gradient(220deg, #f4f43f, #d6d63a);
-        border: 0;
-        border-radius: 10px;
-        font-size: 1.5em;
-        box-shadow: 0px 4px 0 #819F45;
-        text-shadow: 2px 2px 1px #E1FEA6;
-    }
-
-    .aceptar_atras input:active, #mas_menos input:active {
-        position: relative;
-        top: 3px;
-        box-shadow: 0px 2px 0 #819F45;
-        color: #1b5e20;
-        background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;;
-    }
-
-    .aceptar_atras input:not(#enviar_reserva) {
-        margin-right: 6%;
-    }
-
-    #form_buscar_casa_rural {
-        display: flex;
-        font-size: 1.2em;
-    }
-
-    #form_buscar_casa_rural div {
-        width: 90%;
-        display: inline-flex;
-    }
-
-    .campos_formularios:not(.aceptar_atras) {
-        display: block;
-    }
-
-    .campo_bloque:not(.aceptar_atras) {
-        display: block;
-
-    }
-
-    .campo_bloque label, .campo_bloque input {
-        display: block;
-        width: 100%;
-    }
-
-    .campo_enlinea {
-        display: block;
-    }
-
-    .campo_enlinea label {
-        width: 33%;
-        display: inline-block;
-    }
-
-    .campo_enlinea input {
-        width: 67%;
-        display: inline-block;
-    }
-
-    #div_buscar {
-        margin-bottom: 10px;
-    }
-
-    #div_buscar input {
-        width: 50%;
-        letter-spacing: normal;
-        height: 40px;
-        background: linear-gradient(220deg, #f4f43f, #d6d63a);
-        border: 0;
-        border-radius: 10px;
-        font-size: 1.7em;
-        box-shadow: 0px 4px 0 #819F45;
-        text-shadow: 1px 1px 1px #E1FEA6;
-    }
-
-    #div_buscar input:active {
-        position: relative;
-        top: 3px;
-        box-shadow: 0px 2px 0 #819F45;
-        background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;
-    }
 
     .foto_casa {
         margin: 2% 0 2% 2%;
@@ -652,6 +494,10 @@ hr {
         background-repeat: no-repeat;
     }
 
+    .info_casa{
+        font-size: .6em;
+    }
+
     .informacion {
         width: 58%;
         max-width: 58%;
@@ -668,25 +514,8 @@ hr {
         padding: 0;
     }
 
-
     #main {
         display: flex;
-    }
-
-    #mas_menos {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #mas_menos label {
-        width: 40%;
-    }
-
-    #mas_menos input {
-        width: 20%;
-        margin-left: 4%;
-        border-radius: 5px;
-        font-size: 1.4em;
     }
 
     #principal p {
@@ -708,34 +537,6 @@ hr {
 *
 */
 @media screen and (min-width: 683px) {
-
-    aside {
-        width: 30%;
-    }
-
-    .aceptar_atras input{
-        width: 35%;
-        height: 35px;
-        margin: 0 auto;
-        font-size: 1.2em;
-        background: linear-gradient(220deg, rgba(77, 240, 87, 0.91), #41dc4b);
-        box-shadow: 0px 4px 0 #40c94a;
-        text-shadow: none;
-    }
-
-    .aceptar_atras input:hover{
-        margin: 0 auto;
-        background: linear-gradient(220deg, rgba(71, 205, 81, 0.91), #3eaf47);
-        color: inherit;
-        border: none;
-    }
-
-    .aceptar_atras:after, .aceptar_atras:focus{
-        margin: 0 auto;
-        background: linear-gradient(220deg, rgba(71, 205, 81, 0.91), #3eaf47);
-        color: inherit;
-        border: none;
-    }
 
     body{
         font-family: 'Raleway';
@@ -765,7 +566,6 @@ hr {
         transition: 0.5s;
         font-size: 12px;
         padding: 1px 5px 1px 5px;
-        max-height: 15px;
     }
 
     .caracteristicas p:hover{
@@ -810,15 +610,6 @@ hr {
         background-color: rgba(142, 225, 155, 0.4);
         text-align: center;
     }
-
-    #div_buscar{
-        width: 60%;
-    }
-
-    #entrada_salida label{
-        display: none;
-    }
-
     .entrar {
         display: none;
     }
@@ -871,37 +662,6 @@ hr {
     .entrar_desktop:hover {
         transform-origin: center bottom;
         transform: rotateX(-88deg) translateY(100%);
-    }
-
-    #div_buscar input{
-        font-size: 16px;
-        height: 25px;
-        width: 80%;
-        color: rgba(0, 0, 0, 0.85);
-        font-weight: bold;
-        font-family: 'Poppins';
-    }
-
-    #form_buscar_casa_rural{
-        padding: 15px;
-        display: block;
-        width: 90%;
-        border: 2px outset #1b6d85;
-        font-size: 14px;
-        background-color: rgba(64, 238, 75, 0.43);
-        box-shadow:  4px 4px 2px 1px rgba(192, 192, 192, 0.85);
-    }
-
-    #form_buscar_casa_rural div:not(#div_buscar){
-        width: 100%;
-        display: block;
-    }
-
-    #form_buscar_casa_rural input:not(#enviar_busqueda), #form_buscar_casa_rural select{
-        display: block;
-        width: 90%;
-        border-radius: 0;
-        border: 2px inset rgba(154, 154, 154, 0.85);
     }
 
     #img{

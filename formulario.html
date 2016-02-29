@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario reserva</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
     <link rel="stylesheet" href="css/form_reserva.css" type="text/css">
+    <link rel="stylesheet" href="css/style_datepicker.css" type="text/css">
+
+    <!-- Fuentes -->
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+    <script src="js/jquery-2.2.0.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/tinysort.js" type="text/javascript"></script>
+    <script src="js/jquery.tinysort.js" type="text/javascript"></script>
+    <script src="js/tinysort.charorder.js" type="text/javascript"></script>
+    <script src="js/show_datepicker.js" type="text/javascript"></script>
     <script src="js/formulario.js" type="text/javascript"></script>
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
 </head>
 <body id="cuerpo">
 <header id="cabecera">
@@ -21,40 +35,51 @@
         <!--<div class="campos_formularios">-->
         <div id="mas_menos">
             <label for="numero_personas">Número de personas: </label>
-            <input type="submit" id="menos" value="-"><span id="mostrar_numero_personas"> 4 </span><input type="submit" id="mas" value="+">
-        </div>
-        <!--</div>-->
-        <div class="campos_formularios campo_bloque">
-            <label for="nombre">Nombre y apellidos: </label><input type="text" id="nombre">
-        </div>
-        <div class="campos_formularios campo_enlinea">
-            <label for="DNI">DNI: </label><input type="text" id="dni">
-        </div>
-        <div class="campos_formularios campo_enlinea">
-            <label for="entrada">Fecha entrada: </label><input type="date" id="fechaEntrada">
-        </div>
-        <div class="campos_formularios campo_enlinea">
-            <label for="salida">Fecha salida: </label><input type="date" id="fechaSalida">
-        </div>
-        <div class="campos_formularios campo_enlinea">
-            <label for="email">Email: </label><input type="email" id="email">
-        </div>
-        <div class="campos_formularios campo_enlinea">
-            <label for="telefono">Teléfono: </label><input type="number" id="telefono">
-        </div>
-        <div class="campos_formularios campo_bloque">
-            <label for="cuenta">Número de cuenta bancaria</label>
-            <div><input type="number" id="entidad"><input type="number" id="oficina"><input type="number" id="dc" class="dc_nCuenta">
-                <input
-                        type="number" id="nCuenta" class="dc_nCuenta">
+            <div id="mas_menos_mostrar">
+                <input type="submit" id="menos" value=" - ">
+                <span id="mostrar_numero_personas"> 4 </span>
+                <input type="submit" id="mas" value=" + ">
             </div>
         </div>
+        <!--</div>-->
+        <div class="campos_formularios campo_bloque" id="name">
+            <label for="nombre">Nombre: </label><input type="text" id="nombre">
+        </div>
+        <div class="campos_formularios campo_bloque" id="lastName">
+            <label for="nombre">Apellidos: </label><input type="text" id="apellidos">
+        </div>
+        <div class="campos_formularios campo_enlinea" id="nif">
+            <label for="DNI">DNI: </label><input type="text" id="dni">
+        </div>
+        <div class="campos_formularios campo_enlinea" id="dateIn">
+            <label for="fechaEntrada">Fecha entrada: </label><input type="text" id="fechaEntrada">
+        </div>
+        <div class="campos_formularios campo_enlinea" id="dateOut">
+            <label for="fechaSalida">Fecha salida: </label><input type="text" id="fechaSalida">
+        </div>
+        <div class="campos_formularios campo_enlinea" id="e-mail">
+            <label for="email">Email: </label><input type="email" id="email">
+        </div>
+        <div class="campos_formularios campo_enlinea" id="phone">
+            <label for="telefono">Teléfono: </label><input type="number" id="telefono">
+        </div>
+        <div class="campos_formularios campo_bloque" id="bank">
+            <label for="entidad">Número de cuenta bancaria</label>
+            <div><input type="number" id="entidad"><input type="number" id="oficina"><input type="number" id="dc" class="dc_nCuenta">
+                <input type="number" id="nCuenta" class="dc_nCuenta">
+            </div>
+        </div>
+        <div id="div_check" class="campos_formularios">
+            <input type="checkbox" id="conditions">
+            <label for="telefono">Acepto todas las condiciones</label>
+        </div>
         <div class="campos_formularios aceptar_atras campo_bloque">
+            <input type="submit" id="enviar_reserva" class="raised green" value="Aceptar">
             <input type="submit" id="atras_reserva" value="Atrás">
-            <input type="submit" id="enviar_reserva" value="Aceptar">
         </div>
 
-    </form></div>
+    </form>
+</div>
 <footer><p>© Copyright 2016 – Javier Benítez del Pozo</p></footer>
 </body>
 </html>

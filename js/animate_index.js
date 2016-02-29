@@ -4,54 +4,52 @@
 
 (function () {
 
-    var altura = screen.availHeight;
-    var anchura = screen.availWidth;
-    var alturaCasa = altura/3+'px';
-
+    var anchura = $(window).width();
 
     function mostrarDisplay(){
         $('#principal').fadeIn(400);
         $('#images-index').css('display', 'none');
     }
 
+    function quitarCasa(){
+        $(this).css('display', 'none');
+    }
+
     function efectoEscritorio(){
         $('.casa-1').animate({
-            'translate': '-110%'
-        }, 3000, mostrarDisplay);
+            left: "-100%"
+        }, 3900, mostrarDisplay );
         $('.casa-2').animate({
-            'top': '-110%'
-        }, 5600, mostrarDisplay);
+            top: '-100%'
+        }, 5800);
         $('.casa-3').animate({
-            'margin-top': '150%'
-        }, 5300);
+            bottom: '-100%'
+        }, 3200, quitarCasa);
         $('.casa-4').animate({
-            'translate': '200%'
-        }, 5900);
+            right: '-100%'
+        }, 4700);
     }
 
     function efectoMovil(){
-        $('.casa-1, .casa-2, .casa-3').css('height', alturaCasa);
         $('.casa-1, .casa-3').animate({
-            'margin-left': '105%'
-        }, 5000, mostrarDisplay);
-        $('.casa-2, .casa-4').animate({
-            'margin-left': '-105%'
-        }, 5000);
+            marginLeft: '-101%'
+        }, 3200, mostrarDisplay);
+        $('.casa-2').fadeOut(3300);
     }
 
     function efectoPrincipal(){
+        console.log(anchura);
         if(anchura >= 683){
             efectoEscritorio();
         }else{
+            console.log('movil');
             efectoMovil();
         }
-
     }
 
     $(function(){
-        $('body').css('max-height', alturaCasa);
         setTimeout(function(){
             efectoPrincipal();
-        }, 1200);
+        },2000);
     });
 })();

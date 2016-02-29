@@ -5,11 +5,8 @@
 
     var divCookies;
 
-    function setCookie(cname,cvalue,exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000)); // Para crear un tiempo de expiración en días, por defecto es en milisegundos
-        var expires = "expires=" + d.toGMTString();
-        document.cookie = cname+"="+cvalue+"; "+expires;
+    function setCookie(name,value,exp) {
+        document.cookie = name+"="+value+"; "+exp;
     }
 
     function getCookie(cname) {

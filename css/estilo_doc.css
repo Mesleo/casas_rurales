@@ -1,0 +1,40 @@
+body{
+    width: 90%;
+    margin: auto;
+    font-family: "Roboto";
+}
+
+body>header, footer{
+    margin: 10px 0 20px 0;
+    background-color: #2668be;
+    box-shadow: 1px 4px 2px 1px #beccb5;
+    padding: 10px;
+    text-align: center;
+}
+
+body>header{
+    padding: 20px;
+}
+
+article{
+    margin-bottom: 25px;
+    box-shadow: 1px 4px 2px 1px #beccb5;
+    padding: 10px;
+}
+
+body>header h1{
+    font-size: 2em;
+}
+
+.navbar-fixed-top{
+    margin: auto;
+    background-color: #0b4f3e;
+}
+
+.puntos-info{
+    margin: 35px 0 15px 0;
+}
+
+.img-responsive{
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javier Benítez del Pozo</title>
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/estilo_doc.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+</head>
+<body id="page-top" class="index">
+    <header>
+        <h1>Documentación</h1>
+    </header>
+    <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll"><a href="#js-activo">JavaScript activo</a></li>
+            <li class="page-scroll"><a href="#cookies-activas">Cookies activas</a></li>
+            <li class="page-scroll"><a href="#efecto-inicio">Efecto de inicio</a></li>
+            <li class="page-scroll"><a href="#efecto-nombre">Nombre con efecto</a></li>
+            <li class="page-scroll"><a href="#lightbox-imagenes">Lightbox de imágenes</a></li>
+            <li class="page-scroll"><a href="#validacion">Validación</a></li>
+            <li class="page-scroll"><a href="#fechas">Fechas</a></li>
+            <li class="page-scroll"><a href="#errores-validacion">Errores en la validación</a></li>
+            <li class="page-scroll"><a href="#plugin-cookies">Plugin cookies</a></li>
+            <li class="page-scroll"><a href="#validar">Validar</a></li>
+            <li class="page-scroll"><a href="#jquery-ui">JQuery UI</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main class="row">
+            <section>
+                <article id="js-activo"  class="col-lg-12">
+                    <h2 class="name">Javascript activo</h2>
+                    <ol>
+                        <li class="puntos-info">En la página de inicio inserto la etiqueta &lt;noscript&gt;.</li>
+                        <img class="img-responsive"  src="images/doc/js-activo01.PNG" alt="">
+                        <li class="puntos-info">Si está deshabilitado muestro el mensaje de error que está dentro de la etiquet &lt;noscript&gt;.</li>
+                        <img class="img-responsive"  src="images/doc/js-activo02.PNG" alt="">
+                    </ol>
+                </article>
+                <article id="cookies-activas">
+                    <h2 class="name">Cookies activas</h2>
+                    <ol>
+                        <li class="puntos-info">En la página de inicio, intento crear una cookie de prueba nada más cargar la página.</li>
+                        <img class="img-responsive"  src="images/doc/cookies-activas01.PNG" alt="Método setCookie()">
+                        <img class="img-responsive"  src="images/doc/cookies-activas02.PNG" alt="Método setCookie()">
+                        <li class="puntos-info">Acto seguido uso una función para obtener la cookie, si me da el resultado de la cookie que quería crear
+                        significa que se creó, con lo cual el cliente tiene las cookies activadas. En caso contrario se abrirá un cuadro
+                        de diálogo de jQuery UI informando del problema.</li>
+                        <img class="img-responsive"  src="images/doc/cookies-activas03.PNG" alt="Método getCookie()">
+                        <img class="img-responsive"  src="images/doc/cookies-activas04.PNG" alt="Método getCookie()">
+                        <li class="puntos-info">El cuadro de diálogo tiene dos botones: "Aceptar", que cierra el cuadro en conformidad; y "Ayuda" que redirige
+                         al cliente a una página donde enseña como activar las cookies en los diferentes navegadores.</li>
+                        <img class="img-responsive"  src="images/doc/cookies-activas05.PNG" title="Método abrirActivarCookies()" alt="Método abrirActivarCookies()">
+                    </ol>
+                </article>
+                <article id="efecto-inicio">
+                    <h2 class="name">Efecto página inicial</h2>
+                    <ol>
+                        <li class="puntos-info">En la página de inicio, lo primero que muestro durante dos segundos son cuatro imágenes
+                        de cuatro casas rurales distintas.</li>
+                        <img class="img-responsive"  src="images/doc/efecto-inicial01.PNG" alt="">
+                        <li class="puntos-info">Al pasar los dos segundos, cada imagen se desplaza hacia un lado: la de arriba a la izquierda
+                            se desplaza hacia su izquierda, la de arriba a la derecha se desplaza hacia arriba, la de abajo a la izquierda
+                            se desplaza hacia abajo y la de abajo a la derecha se mueve hacia su derecha.</li>
+                        <img class="img-responsive"  src="images/doc/efecto-inicial02.PNG" alt="">
+                        <li class="puntos-info">Código fuente: </li>
+                        <img class="img-responsive"  src="images/doc/efecto-inicial03.PNG" alt="">
+                        <img class="img-responsive"  src="images/doc/efecto-inicial04.PNG" alt="">
+                    </ol>
+                </article>
+                <article id="efecto-nombre">
+                    <h2 class="name">Efecto títulos casas</h2>
+                    <ol>
+                        <li class="puntos-info">En la página principal, cuando se ha cargado todo el DOM aplico un efecto de entrada suave a
+                             los títulos de todas las casas rurales.</li>
+                        <img class="img-responsive"  src="images/doc/efecto-nombre01.PNG" alt="">
+                        <li class="puntos-info">Para ello aplico unas clases y atributos a los elementos para que se aplique el estilo correspondiente
+                        en la hoja de estilos animate.css. Código html: </li>
+                        <img class="img-responsive"  src="images/doc/efecto-nombre02.PNG" alt="">
+                        <li class="puntos-info">Código CSS: </li>
+                        <img class="img-responsive"  src="images/doc/efecto-nombre03.PNG" alt="">
+                    </ol>
+                </article>
+                <article id="lightbox-imagenes">
+                    <h2 class="name">Lightbox de imágenes</h2>
+                    <ol>
+                        <li class="puntos-info">En la página principal, cada casa rural de la lista tiene un enlace que pone "Fotos" para mostrar
+                            la galería de dicha casa. Para esto he utilizado el plugin de jQuery lightbox.</li>
+                        <img class="img-responsive"  src="images/doc/ligthbox01.PNG" alt="">
+                        <li class="puntos-info">Si se pincha en el enlace aparecerán todas las fotos de la casa en una lista horizontal.</li>
+                        <img class="img-responsive"  src="images/doc/ligthbox02.PNG" alt="">
+                        <li class="puntos-info">Se puede ver cada foto en grande si se hace click sobre ella, y se permite el desplazamiento por
+                        la galería de fotos viendo cada una de ellas en grande. Además se puede salir del "lightbox" pinchando sobre la "X" de la
+                        foto o simplemente fuera de la imagen.</li>
+                        <img class="img-responsive"  src="images/doc/ligthbox03.PNG" alt="">
+                        <li class="puntos-info">Código HTML: </li>
+                        <img class="img-responsive"  src="images/doc/ligthbox04.PNG" alt="">
+                        <img class="img-responsive"  src="images/doc/ligthbox06.PNG" alt="">
+                        <li class="puntos-info">Código JQuery: </li>
+                        <img class="img-responsive"  src="images/doc/ligthbox05.PNG" alt="">
+                    </ol>
+                </article>
+                <article id="validacion">
+                    <h2 class="name">Lightbox de imágenes</h2>
+                    <ol>
+                        <li class="puntos-info">En la página principal, cada casa rural de la lista tiene un enlace que pone "Fotos" para mostrar
+                            la galería de dicha casa.</li>
+                        <img class="img-responsive"  src="images/doc/ligthbox01.PNG" alt="">
+                        <li class="puntos-info">Si se pincha en el enlace aparecerán todas las fotos de la casa en una lista horizontal.</li>
+                        <img class="img-responsive"  src="images/doc/ligthbox02.PNG" alt="">
+                        <li class="puntos-info">Se puede ver cada foto en grande si se hace click sobre ella, y se permite el desplazamiento por
+                            la galería de fotos viendo cada una de ellas en grande. Además se puede salir del "lightbox" pinchando sobre la "X" de la
+                            foto o simplemente fuera de la imagen.</li>
+                        <img class="img-responsive"  src="images/doc/ligthbox03.PNG" alt="">
+                    </ol>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer><p>© Copyright 2016 – Javier Benítez del Pozo</p></footer>
+</body>
+</html>

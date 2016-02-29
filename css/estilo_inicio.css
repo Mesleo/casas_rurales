@@ -7,47 +7,112 @@
     display: none;
 }
 
-.casa-inicio{
-    min-width: 100%;
-}
-
 .image{
-    min-width: 100%;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
 }
 
 .casa-4{
     display: none;
 }
 
+.deshabilitado{
+    width: 80%;
+    margin: auto;
+    z-index: 50000;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(244, 248, 243, 0.7);
+    border: 5px outset #ff1b00;
+    padding: 20px;
+    text-align: center;
+}
+
+.deshabilitado p{
+    font-size: 1.2em;
+}
+
+.deshabilitado img{
+    width: 45%;
+}
+
 @media screen and (min-width: 683px){
 
     .casa-1{
-        display: inline-block;
+        top: 0;
     }
 
-    .casa-2{
-        position: absolute;
+    .casa-4{
+        right: 0;
+        bottom: 0;
         display: inline-block;
     }
 
     .casa-3{
-        display: inline-block;
+        left: 0;
+        bottom: 0;
     }
 
-    .casa-4{
+    .casa-2{
+        right: 0;
+    }
+
+    .deshabilitado{
+        width: 60%;
+        margin: auto;
+        z-index: 50000;
         position: absolute;
-        display: inline-block;
-    }
-
-    .casa-inicio{
-        min-width: 0;
-        max-width: 50%;
-        height: 350px;
+        top: 10%;
+        left: 20%;
+        background-color: rgba(244, 248, 243, 0.7);
+        border: 5px outset #ff1b00;
+        padding: 20px;
+        text-align: center;
     }
 
     .image{
-        min-width: 100%;
-        height: 100% !important;
+        position: absolute;
+        width: 50% ;
+        height: 50% ;
+    }
+
+
+    #dialog-confirm{
+        display: none;
+    }
+
+    .ui-dialog .ui-dialog-buttonpane{
+        padding: 0;
+    }
+
+    .ui-dialog{
+        width: 60% !important;
+        top: 55% !important;
+        font-size: 1.2em !important;
+        border: 3px outset #F73017;
+        padding: 0;
+    }
+
+    .no-close .ui-dialog-titlebar-close {
+        display: none;
+    }
+
+    .ui-helper-clearfix{
+        border-radius: 0;
+        background-color: #67B021;
+    }
+
+    .ui-button{
+        font-size: .8em !important;
+        background-color: #ebebeb !important;
+        color: #0b1123 !important;
+        border: 2px outset #433F38;
+    }
+
+    .ui-button:active{
+        background-color: #c0c0c0 !important;
+        color: #1e2568 !important;
+        border: 2px inset;
     }
 }

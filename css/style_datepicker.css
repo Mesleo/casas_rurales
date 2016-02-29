@@ -1,0 +1,25 @@
+
+.ui-datepicker-header {
+    background-color: #67B021;
+}
+
+#ui-datepicker-div td {
+    background-color: #3e7217;
+    padding: 1px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    border: 1px solid #3e7217;
+    border-radius: 5px;
+    background: #67B021 50% 50% repeat-x;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.ui-state-hover, .ui-state-active {
+    background: #3c783c 50% 50% repeat-x !important;
+    /*border: 1px solid #3e7217;*/
+    /*border-radius: 5px;*/
+    font-weight: normal;
+    color: #ffffff;
+}

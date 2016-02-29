@@ -1,0 +1,156 @@
+
+#form_buscar_casa_rural input {
+    font-size: 1em;
+    width: 50%;
+    outline: none;
+}
+
+.ui-autocomplete-input {
+    font-size: 20px;
+    padding: 0;
+}
+
+.info_casa {
+    position: relative;
+}
+
+.nombre_casa {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.galeria-lightbox {
+    display: none;
+    position: absolute;
+    width: 200%;
+    z-index: 99;
+    left: -70%;
+    height: 270px;
+    background-color: rgba(51, 51, 51, 0.6);
+    text-align: center;
+}
+
+.galeria-lightbox a {
+    margin-top: 30px;
+    display: inline-block;
+    width: 15%;
+    border: 5px groove #1e8237;
+}
+
+.galeria-lightbox img {
+    width: 100%;
+}
+
+.ui-helper-clearfix {
+    background-color: inherit;
+}
+
+/**
+*
+* Para resoluciones con una anchura mínima de 410px
+*
+*/
+@media screen and (min-width: 410px) {
+
+    #form_buscar_casa_rural {
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    #form_buscar_casa_rural div {
+        width: 90%;
+        display: inline-flex;
+    }
+
+    #div_buscar {
+        margin-bottom: 10px;
+    }
+
+    #div_buscar input {
+        width: 50%;
+        letter-spacing: normal;
+        height: 40px;
+        background: linear-gradient(220deg, #f4f43f, #d6d63a);
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.7em;
+        box-shadow: 0px 4px 0 #819F45;
+        text-shadow: 1px 1px 1px #E1FEA6;
+    }
+
+    #div_buscar input:active {
+        position: relative;
+        top: 3px;
+        box-shadow: 0px 2px 0 #819F45;
+        background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;
+    }
+}
+
+/**
+*
+* Para resoluciones con una anchura mínima de 869px
+*
+*/
+@media screen and (min-width: 683px) {
+
+    #fechaSalida, .salida {
+        display: none;
+        visibility: hidden;
+    }
+
+    .salida {
+        margin-top: 10px;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    #destino {
+        margin-left: 2%;
+    }
+
+    #div_buscar {
+        width: 60%;
+    }
+
+    #entrada_salida label {
+        display: none;
+    }
+
+    #div_buscar input {
+        font-size: 16px;
+        height: 25px;
+        width: 80%;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        font-family: 'Poppins';
+    }
+
+    #form_buscar_casa_rural {
+        padding: 15px;
+        display: block;
+        width: 90%;
+        border: 2px outset #1b6d85;
+        font-size: 14px;
+        background-color: rgba(64, 238, 75, 0.43);
+        box-shadow: 4px 4px 2px 1px rgba(192, 192, 192, 0.85);
+    }
+
+    #form_buscar_casa_rural label{
+        margin-top: 10px;
+    }
+
+    #form_buscar_casa_rural div:not(#div_buscar) {
+        width: 100%;
+        display: block;
+    }
+
+    #form_buscar_casa_rural input:not(#enviar_busqueda), #form_buscar_casa_rural select {
+        display: block;
+        width: 90%;
+        border-radius: 0;
+        border: 2px inset rgba(154, 154, 154, 0.85);
+    }
+
+}
