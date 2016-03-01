@@ -1,9 +1,151 @@
+a.image2-lightbox{
+    margin: 10px 0 5px 5px;
+    display: block;
+    width: 35%;
+}
 
-#form_buscar_casa_rural input {
+body {
+    background: linear-gradient(to bottom, #e8f5e9, #81c784, #43a047, #1b5e20) fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#buscarCasa, #tipoAlojamiento {
+    width: 45%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.cabecera_casas {
+    width: 100%;
+}
+
+#casas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#casas article {
+    width: 100%;
+}
+
+#buscador_huespedes, #entrada_salida, #inputs_entrada_salida, #div_filtro {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    margin-bottom: 3px;
+}
+
+.caracteristicas, .descripcion {
+    display: none;
+}
+
+
+#div_buscar {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#div_filtro label, #filtro {
+    width: 45%;
+    margin-left: 2%;
+    border-radius: 5px;
+    display: flex;
+    font-size: 1em;
+    flex-direction: row;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#entrada_salida label {
+    width: 45%;
+    margin-left: 2%;
+    font-size: 1em;
+}
+
+
+#enviar_busqueda {
+    width: 75%;
+    margin: 0 auto;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: #727272;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    outline: none;
+}
+
+#enviar_busqueda:active {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.estrella_opiniones {
+    width: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#form_buscar_casa_rural {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#form_buscar_casa_rural input, #form_buscar_casa_rural select {
+    border-radius: 8px;
     font-size: 1em;
     width: 50%;
     outline: none;
 }
+
+.foto_casa {
+    margin: 2% 0 2% 2%;
+    padding: 0;
+    height: 100px;
+    width: 35%;
+    display: inline-flex;
+    position: relative;
+    border: 1px outset #525b5f;
+    border-radius: 5px;
+}
+
+.galeria {
+    display: none;
+}
+
+.galeria img {
+    display: none;
+}
+
+#inputs_entrada_salida input {
+    width: 45%;
+    margin-left: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.image-lightbox{
+    display: none;
+}
+
+.image2-lightbox img{
+    width: 100%;
+}
+
+main {
+    display: flex;
+}
+
 
 .ui-autocomplete-input {
     font-size: 20px;
@@ -12,7 +154,26 @@
 
 .info_casa {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    border-top: 2px groove #0b1123;
+    font-size: .8em;
 }
+
+.informacion {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 2% 3% 7%;
+}
+
+.informacion p {
+    width: 100%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
 
 .nombre_casa {
     font-weight: bold;
@@ -41,6 +202,32 @@
     width: 100%;
 }
 
+.reserva{
+    display: block;
+    width: 60%;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0;
+    margin-top: 2px;
+    background-color: #FFEB3B;
+    border: 2px outset #FBC02D;
+    color: #525252;
+    font-family: 'Poppins';
+    margin-bottom: 5px;
+}
+
+.reserva:active{
+    color: #252525;
+    background-color: #cdb935;
+    border: 2px inset #c99728;
+}
+
+.ui-widget-header {
+    border: 1px solid #d4ccb0;
+    background-image: none;
+    color: #433f38;
+    font-weight: bold;
+}
 .ui-helper-clearfix {
     background-color: inherit;
 }
@@ -51,16 +238,6 @@
 *
 */
 @media screen and (min-width: 410px) {
-
-    #form_buscar_casa_rural {
-        display: flex;
-        font-size: 1.2em;
-    }
-
-    #form_buscar_casa_rural div {
-        width: 90%;
-        display: inline-flex;
-    }
 
     #div_buscar {
         margin-bottom: 10px;
@@ -84,6 +261,51 @@
         box-shadow: 0px 2px 0 #819F45;
         background: linear-gradient(110deg, #d6d63a 0%, #f4f43f 100%) repeat scroll 0 0 transparent;
     }
+
+    #form_buscar_casa_rural {
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    #form_buscar_casa_rural div {
+        width: 90%;
+        display: inline-flex;
+    }
+
+    .foto_casa {
+        margin: 2% 0 2% 2%;
+        padding: 0;
+        width: 40%;
+        height: 130px;
+        display: inline-flex;
+        position: relative;
+        border: 1px outset #525b5f;
+        border-radius: 5px;
+    }
+
+    .info_casa{
+        font-size: .6em;
+    }
+
+    .informacion {
+        width: 58%;
+        max-width: 58%;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 3px 3px 25px;
+        font-size: 1.5em;
+    }
+
+    .informacion p {
+        width: 100%;
+        line-height: 170%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #titulo_principal {
+        font-size: 3em;
+    }
 }
 
 /**
@@ -93,9 +315,146 @@
 */
 @media screen and (min-width: 683px) {
 
+
+    .caracteristicas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .caracteristicas p{
+        display: inline-block;
+        border-top: 1px solid rgba(0, 203, 36, 0.66);
+        border-right: 1px solid rgba(0, 203, 36, 0.66);
+        border-left: 1px solid rgba(0, 203, 36, 0.66);
+        border-radius: 3px;
+        text-align: center;
+        margin: 8% 2% 8px 0;
+        margin-right: 5px;
+        transition: 0.5s;
+        font-size: 12px;
+        padding: 1px 5px 1px 5px;
+    }
+
+    .caracteristicas p:hover{
+        background-color: rgba(0, 203, 36, 0.34);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    #casas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #casas article{
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria {
+        display: flex;
+        visibility: visible;
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .galeria picture{
+        width: 23%;
+        border: 3px inset rgba(55, 93, 63, 0.59);
+        height: 175px;
+    }
+
+    .galeria picture:not(.ultima_foto_galeria){
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .galeria img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    html, body{
+        background-color: white;
+        background: none;
+    }
+
+    main{
+        width: 70%;
+    }
+
+    .descripcion{
+        display: block;
+    }
+
+    .descripcion, .caracteristicas{
+        font-size: 1em;
+    }
+
+    .destacado{
+        width: 100%;
+        height: 10%;
+        font-size: .9em;
+        position: relative;
+        top: -10%;
+        background-color: rgba(142, 225, 155, 0.4);
+        text-align: center;
+    }
+
     #fechaSalida, .salida {
         display: none;
         visibility: hidden;
+    }
+
+
+    .foto_casa{
+        width: 20%;
+    }
+
+    .info_casa{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .info_casa picture{
+        width: 200px;
+        height: 175px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        width: 75%;
+        padding: 20px;
+    }
+
+    .informacion a{
+        font-size: 1em;
+        width: 35%;
+        border-radius: 10px;
+    }
+
+
+    .pajaro, .pajaro2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .primer_div_casa{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .primer_div_casa p{
+        margin-right: 70px;
     }
 
     .salida {
@@ -152,5 +511,7 @@
         border-radius: 0;
         border: 2px inset rgba(154, 154, 154, 0.85);
     }
+
+
 
 }

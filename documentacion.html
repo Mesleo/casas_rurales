@@ -9,39 +9,59 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/estilo_doc.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-2.2.0.js" type="text/javascript"></script>
+    <script src="js/function_doc.min.js" type="text/javascript"></script>
 </head>
 <body id="page-top" class="index">
     <header>
-        <h1>Documentación</h1>
+        <i class="fa fa-menu"></i>
+        <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll"><a href="#js-activo">JavaScript activo</a></li>
+                <li class="page-scroll"><a href="#cookies-activas">Cookies activas</a></li>
+                <li class="page-scroll"><a href="#efecto-inicio">Efecto de inicio</a></li>
+                <li class="page-scroll"><a href="#efecto-nombre">Nombre con efecto</a></li>
+                <li class="page-scroll"><a href="#lightbox-imagenes">Lightbox de imágenes</a></li>
+                <li class="page-scroll"><a href="#num-personas">Validación número de personas</a></li>
+                <li class="page-scroll"><a href="#nom-ape">Validación nombre</a></li>
+                <li class="page-scroll"><a href="#dni">Validación dni</a></li>
+                <li class="page-scroll"><a href="#fechas">Validación fechas</a></li>
+                <li class="page-scroll"><a href="#email">Validación email</a></li>
+                <li class="page-scroll"><a href="#telefono">Validación teléfono</a></li>
+                <li class="page-scroll"><a href="#cuenta">Validación cuenta</a></li>
+                <li class="page-scroll"><a href="#checkbox">Validación checkbox</a></li>
+                <li class="page-scroll"><a href="#jquery-ui">JQuery UI</a></li>
+                <li class="page-scroll"><a href="#tinysort">Plugin Tinysort</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll"><a href="#js-activo">JavaScript activo</a></li>
-            <li class="page-scroll"><a href="#cookies-activas">Cookies activas</a></li>
-            <li class="page-scroll"><a href="#efecto-inicio">Efecto de inicio</a></li>
-            <li class="page-scroll"><a href="#efecto-nombre">Nombre con efecto</a></li>
-            <li class="page-scroll"><a href="#lightbox-imagenes">Lightbox de imágenes</a></li>
-            <li class="page-scroll"><a href="#validacion">Validación</a></li>
-            <li class="page-scroll"><a href="#fechas">Fechas</a></li>
-            <li class="page-scroll"><a href="#errores-validacion">Errores en la validación</a></li>
-            <li class="page-scroll"><a href="#plugin-cookies">Plugin cookies</a></li>
-            <li class="page-scroll"><a href="#validar">Validar</a></li>
-            <li class="page-scroll"><a href="#jquery-ui">JQuery UI</a></li>
-        </ul>
-    </nav>
     <div class="container">
         <main class="row">
             <section>
-                <article id="js-activo"  class="col-lg-12">
+                <article class="principal">
+                    <h1>Casas rurales</h1>
+                    <br>
+                    <p>Puedes ver el proyecto <a href="http://mesleo.github.io/casas_rurales/">aquí</a></p>
+                    <p>Puedes ver y <a href="https://github.com/Mesleo/casas_rurales">descargar</a> todos los archivos en GitHub</p>
+                    <div id="js-activo"></div>
+                </article>
+            </section>
+            <section>
+                <!-- JavaScript activo -->
+                <article  class="col-lg-12">
                     <h2 class="name">Javascript activo</h2>
                     <ol>
                         <li class="puntos-info">En la página de inicio inserto la etiqueta &lt;noscript&gt;.</li>
                         <img class="img-responsive"  src="images/doc/js-activo01.PNG" alt="">
                         <li class="puntos-info">Si está deshabilitado muestro el mensaje de error que está dentro de la etiquet &lt;noscript&gt;.</li>
                         <img class="img-responsive"  src="images/doc/js-activo02.PNG" alt="">
+                        <div  id="cookies-activas" ></div>
                     </ol>
                 </article>
-                <article id="cookies-activas">
+                <!--  END JavaScript activo -->
+
+                <!-- Cookies activas -->
+                <article>
                     <h2 class="name">Cookies activas</h2>
                     <ol>
                         <li class="puntos-info">En la página de inicio, intento crear una cookie de prueba nada más cargar la página.</li>
@@ -53,11 +73,15 @@
                         <img class="img-responsive"  src="images/doc/cookies-activas03.PNG" alt="Método getCookie()">
                         <img class="img-responsive"  src="images/doc/cookies-activas04.PNG" alt="Método getCookie()">
                         <li class="puntos-info">El cuadro de diálogo tiene dos botones: "Aceptar", que cierra el cuadro en conformidad; y "Ayuda" que redirige
-                         al cliente a una página donde enseña como activar las cookies en los diferentes navegadores.</li>
+                            al cliente a una página donde enseña como activar las cookies en los diferentes navegadores.</li>
                         <img class="img-responsive"  src="images/doc/cookies-activas05.PNG" title="Método abrirActivarCookies()" alt="Método abrirActivarCookies()">
+                        <div id="efecto-inicio"></div>
                     </ol>
                 </article>
-                <article id="efecto-inicio">
+                <!--  END Cookies activas -->
+
+                <!--  Efecto página inicial -->
+                <article>
                     <h2 class="name">Efecto página inicial</h2>
                     <ol>
                         <li class="puntos-info">En la página de inicio, lo primero que muestro durante dos segundos son cuatro imágenes
@@ -70,9 +94,13 @@
                         <li class="puntos-info">Código fuente: </li>
                         <img class="img-responsive"  src="images/doc/efecto-inicial03.PNG" alt="">
                         <img class="img-responsive"  src="images/doc/efecto-inicial04.PNG" alt="">
+                        <div id="efecto-nombre"></div>
                     </ol>
                 </article>
-                <article id="efecto-nombre">
+                <!--  END Efecto página inicial -->
+
+                <!--  Efecto títulos casas -->
+                <article>
                     <h2 class="name">Efecto títulos casas</h2>
                     <ol>
                         <li class="puntos-info">En la página principal, cuando se ha cargado todo el DOM aplico un efecto de entrada suave a
@@ -83,41 +111,215 @@
                         <img class="img-responsive"  src="images/doc/efecto-nombre02.PNG" alt="">
                         <li class="puntos-info">Código CSS: </li>
                         <img class="img-responsive"  src="images/doc/efecto-nombre03.PNG" alt="">
+                        <div id="lightbox-imagenes"></div>
                     </ol>
                 </article>
-                <article id="lightbox-imagenes">
+                <!--  END Efecto títulos casas -->
+
+                <!--  Lightbox de imágenes -->
+                <article>
                     <h2 class="name">Lightbox de imágenes</h2>
                     <ol>
-                        <li class="puntos-info">En la página principal, cada casa rural de la lista tiene un enlace que pone "Fotos" para mostrar
-                            la galería de dicha casa. Para esto he utilizado el plugin de jQuery lightbox.</li>
+                        <li class="puntos-info">En la página principal, cada casa rural tiene una foto mostrando dicha casa, si se pincha sobre ella se verá
+                            una galería "Lightbox" donde se mostrarán más fotos que principalmente están ocultas.</li>
                         <img class="img-responsive"  src="images/doc/ligthbox01.PNG" alt="">
-                        <li class="puntos-info">Si se pincha en el enlace aparecerán todas las fotos de la casa en una lista horizontal.</li>
+                        <li class="puntos-info">El lightbox tiene unos botones de "siguiente" y "anterior" para seguir visualizando más imágenes en el caso
+                            de que haya más en esa dirección. Y una "x" en la parte inferior izquierda para cerrar el lightbox, aunque también se cierra
+                            pinchando fuera de la foto. Así se ve.</li>
                         <img class="img-responsive"  src="images/doc/ligthbox02.PNG" alt="">
-                        <li class="puntos-info">Se puede ver cada foto en grande si se hace click sobre ella, y se permite el desplazamiento por
-                        la galería de fotos viendo cada una de ellas en grande. Además se puede salir del "lightbox" pinchando sobre la "X" de la
-                        foto o simplemente fuera de la imagen.</li>
-                        <img class="img-responsive"  src="images/doc/ligthbox03.PNG" alt="">
                         <li class="puntos-info">Código HTML: </li>
-                        <img class="img-responsive"  src="images/doc/ligthbox04.PNG" alt="">
-                        <img class="img-responsive"  src="images/doc/ligthbox06.PNG" alt="">
-                        <li class="puntos-info">Código JQuery: </li>
-                        <img class="img-responsive"  src="images/doc/ligthbox05.PNG" alt="">
-                    </ol>
-                </article>
-                <article id="validacion">
-                    <h2 class="name">Lightbox de imágenes</h2>
-                    <ol>
-                        <li class="puntos-info">En la página principal, cada casa rural de la lista tiene un enlace que pone "Fotos" para mostrar
-                            la galería de dicha casa.</li>
-                        <img class="img-responsive"  src="images/doc/ligthbox01.PNG" alt="">
-                        <li class="puntos-info">Si se pincha en el enlace aparecerán todas las fotos de la casa en una lista horizontal.</li>
-                        <img class="img-responsive"  src="images/doc/ligthbox02.PNG" alt="">
-                        <li class="puntos-info">Se puede ver cada foto en grande si se hace click sobre ella, y se permite el desplazamiento por
-                            la galería de fotos viendo cada una de ellas en grande. Además se puede salir del "lightbox" pinchando sobre la "X" de la
-                            foto o simplemente fuera de la imagen.</li>
                         <img class="img-responsive"  src="images/doc/ligthbox03.PNG" alt="">
+                        <li class="puntos-info">Para que el lightbox funcione es necesario linkear la hoja de estilo en el head de nuestro HTML: </li>
+                        <img class="img-responsive"  src="images/doc/ligthbox05.PNG" alt=""><br>
+                        <li>Y el script donde se llama al JS ponerlo al final del body: </li>
+                        <img class="img-responsive"  src="images/doc/ligthbox04.PNG" alt="">
+                        <div id="num-personas"></div>
                     </ol>
                 </article>
+                <!--  END Lightbox de imágenes -->
+
+                <!--  Validación -->
+                <article id="validacion">
+                    <h2 class="name">Validaciones (Formulario de reserva)</h2>
+                    <p>En todos los campos editables quito los espacios en blanco del principio y del final con la función trim().</p>
+                    <ol>
+                        <li class="puntos-info"><strong>Número de personas: </strong>Aquí no he necesitado ninguna validación, ya que consta de dos botones
+                            para aumentar o disminuir el número de personas de una cadena que hay en un span.
+                            <img class="img-responsive"  src="images/doc/val-personas05.PNG" alt="">
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-personas01.PNG" alt="">
+                                <li>JavaScript (función que comprueba el botón pulsado)</li><img class="img-responsive"  src="images/doc/val-personas02.PNG" alt=""><br>
+                                <li>JavaScript (disminuir personas)</li><img class="img-responsive"  src="images/doc/val-personas03.PNG" alt=""><br>
+                                <li>JavaScript (aumentar personas)</li><img class="img-responsive"  src="images/doc/val-personas04.PNG" alt="">
+                                <div id="nom-ape"></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li  class="puntos-info"><strong>Nombre y apellidos: </strong>Un mínimo de tres letras. Y sólo letras, independientemente
+                            de si son mayúsculas o minúsculas.
+                            <ul>
+                                <li>Vista (sin datos):</li>
+                                <img class="img-responsive"  src="images/doc/val-nom-ape01.PNG" alt="">
+                                <li>Vista (comprobación):</li>
+                                <img class="img-responsive"  src="images/doc/val-nom-ape02.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-nom-ape03.PNG" alt="">
+                                <li>JQuery (invoco a la función de comprobación)</li><img class="img-responsive"  src="images/doc/val-nom-ape04.PNG" alt=""><br>
+                                <li>JQuery (comprobación)</li><img class="img-responsive"  src="images/doc/val-nom-ape05.PNG" alt=""><br>
+                                <li>JQuery (validación mediante expresión regular)</li><img class="img-responsive"  src="images/doc/val-nom-ape06.PNG" alt="">
+                                <li>JQuery (error)</li><img class="img-responsive"  src="images/doc/val-nom-ape07.PNG" alt="">
+                                <div id="dni" ></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="puntos-info"><strong>DNI: </strong>Ocho números y una letra, puede ser mayúscula o minúscula, sin guiones
+                            ni ningún otro separador.
+                            <ul>
+                                <li>Válido:</li>
+                                <img class="img-responsive"  src="images/doc/val-dni01.PNG" alt="">
+                                <li>Inválido:</li>
+                                <img class="img-responsive"  src="images/doc/val-dni02.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-dni06.PNG" alt="">
+                                <li>JQuery (invoco a la función de comprobación)</li><img class="img-responsive"  src="images/doc/val-dni03.PNG" alt=""><br>
+                                <li>JQuery (comprobación)</li><img class="img-responsive"  src="images/doc/val-dni04.PNG" alt=""><br>
+                                <li>JQuery (validación mediante expresión regular)</li><img class="img-responsive"  src="images/doc/val-dni05.PNG" alt=""><br>
+                                <li>JQuery (error)</li><img class="img-responsive"  src="images/doc/val-nom-ape07.PNG" alt="">
+                                <div id="fechas"></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="puntos-info"><strong>Fechas: </strong>En los campos de fechas no he utilizado expresiones regulares, simplemente compruebo cuando
+                            se pierde el foco o se presiona el botón "Aceptar" que se haya seleccionado una fecha. Como hago uso del objeto
+                            de jQuery Datepicker le añado unos atributos y funciones para que no se pueda elegir una fecha anterior a hoy como fecha de entrada y,
+                            en la fecha de salida, no se puede elegir un día anterior a mañana o, si ya se ha elegido fecha de entrada, anterior a la fecha escogida
+                            en ese campo.
+                            <ul>
+                                <li>Compruebo que se haya seleccionado alguna fecha:</li>
+                                <img class="img-responsive"  src="images/doc/val-fecha01.PNG" alt="">
+                                <li>Impido que se pueda seleccionar fechas anteriores a hoy, o, en su defecto, a la fecha de entrada:</li>
+                                <img class="img-responsive"  src="images/doc/val-fecha02.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-fecha03.PNG" alt="">
+                                <li>JQuery (DatePicker - Inicio variables)</li><img class="img-responsive"  src="images/doc/val-fecha08.PNG" alt=""><br>
+                                <li>JQuery (modifico el objeto por defecto con formato español)</li><img class="img-responsive"  src="images/doc/val-fecha06.PNG" alt=""><br>
+                                <li>JQuery (función)</li><img class="img-responsive"  src="images/doc/val-fecha07.PNG" alt=""><br>
+                                <li>JQuery (comprobación del foco)</li><img class="img-responsive"  src="images/doc/val-fecha04.PNG" alt=""><br>
+                                <li>JQuery (comprobación del foco)</li><img class="img-responsive"  src="images/doc/val-fecha05.PNG" alt="">
+                                <div id="email" ></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="puntos-info"><strong>Email: </strong> Este campo lo compruebo mediante expresión regular.
+                            <ul>
+                                <li>Válido:</li>
+                                <img class="img-responsive"  src="images/doc/val-email01.PNG" alt="">
+                                <li>Inválido:</li>
+                                <img class="img-responsive"  src="images/doc/val-email02.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-email03.PNG" alt="">
+                                <li>JQuery (compruebo el foco)</li><img class="img-responsive"  src="images/doc/val-email04.PNG" alt=""><br>
+                                <li>JQuery (compruebo la validación)</li><img class="img-responsive"  src="images/doc/val-email05.PNG" alt=""><br>
+                                <li>JQuery (expresión regular)</li><img class="img-responsive"  src="images/doc/val-email06.PNG" alt="">
+                                <div id="telefono" ></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="puntos-info"><strong>Teléfono: </strong> También lo compruebo mediante expresión regular, nueve números. No
+                            permito espacios entre los números, ni ningún otro separador. Además, uso un input de tipo "number" de HTML5 que aunque
+                            no funciona en todos los navegadores, impide en la insercción de caracteres no númericos.
+                            <ul>
+                                <li>Válido:</li>
+                                <img class="img-responsive"  src="images/doc/val-telf01.PNG" alt="">
+                                <li>Inválido:</li>
+                                <img class="img-responsive"  src="images/doc/val-telf02.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-telf03.PNG" alt="">
+                                <li>JQuery (compruebo el foco)</li><img class="img-responsive"  src="images/doc/val-telf04.PNG" alt=""><br>
+                                <li>JQuery (compruebo la validación)</li><img class="img-responsive"  src="images/doc/val-telf05.PNG" alt=""><br>
+                                <li>JQuery (expresión regular)</li><img class="img-responsive"  src="images/doc/val-telf06.PNG" alt="">
+                                <div id="cuenta"></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="puntos-info"><strong>Cuenta bancaria: </strong> Aquí hay cuatro campos para comprobar: Entidad (4 dígitos), oficina
+                            (4 dígitos), dígitos de control (2 dígitos) y número de cuenta (10 dígitos). No permito números negativos ni separadores.
+                            <ul>
+                                <li>Comprobaciones:</li>
+                                <img class="img-responsive"  src="images/doc/val-bank01.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-bank.PNG" alt="">
+                                <li>JQuery (compruebo el foco de cada campo)</li><img class="img-responsive"  src="images/doc/val-bank02.PNG" alt=""><br>
+                                <li>JQuery (valido cada campo)</li><img class="img-responsive"  src="images/doc/val-bank03.PNG" alt="">
+                                <div id="checkbox" ></div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="puntos-info"><strong>Checkbox de condiciones: </strong> Aquí simplemente compruebo que esté marcada la casilla,
+                            mostrando un mensaje de error en caso de no estarlo.
+                            <ul>
+                                <li>Válido:</li>
+                                <img class="img-responsive"  src="images/doc/val-check01.PNG" alt="">
+                                <li>Inválido:</li>
+                                <img class="img-responsive"  src="images/doc/val-check02.PNG" alt="">
+                            </ul>
+                            <ul>
+                                <li>HTML:</li>
+                                <img class="img-responsive"  src="images/doc/val-check03.PNG" alt="">
+                                <li>JQuery (compruebo el foco de cada campo)</li><img class="img-responsive"  src="images/doc/val-check04.PNG" alt=""><br>
+                                <li>JQuery (validación)</li><img class="img-responsive"  src="images/doc/val-check05.PNG" alt="">
+                            </ul>
+                        </li>
+                        <div id="jquery-ui"></div>
+                    </ol>
+                </article>
+                <!-- END Validación -->
+
+                <!--  JQuery UI -->
+                <article>
+                    <h2 class="name">JQuery UI</h2>
+                    <ol>
+                        <li class="puntos-info">Versión: 1.11.4</li>
+                        <img class="img-responsive"  src="images/doc/jquery-ui01.PNG" alt="">
+                        <li class="puntos-info">Se puede descargar <a href="https://jqueryui.com/download/">aquí</a>.</li>
+                        <div id="tinysort"></div>
+                    </ol>
+                </article>
+                <!--  END JQuery UI -->
+
+                <!--  Tinysort -->
+                <article>
+                    <h2 class="name">Plugin Tinysort</h2>
+                    <ol>
+                        <li class="puntos-info">Este plugin sirve para ordenar elementos dentro de otro elemento del DOM. Se puede ordenar alfabé
+                        ticamente o alfebéticamente y numéricamente.</li>
+                        <li class="puntos-info">Versión: 2.2.4</li>
+                        <li class="puntos-info">Se puede descargar <a href="http://tinysort.sjeiti.com/">aquí</a>.</li>
+                        <li class="puntos-info">Lo utilizo en la página del formulario para los errores de la cuenta bancaria. Como son 4 campos distintos,
+                            cada uno muestra un error. Así que le asigno un id con un número a cada elemento de error (etiqueta &lt;p&gt;) siendo el campo más
+                            a la izquierda el número más pequeño y el más grande el de la derecha; y ordeno estos párrafos de manera ascendente. Código donde lo utilizo: </li>
+                        <li class="puntos-info">Código HTML: </li>
+                        <img class="img-responsive"  src="images/doc/tinysort3.PNG" alt="">
+                        <li class="puntos-info">Código jQuery: </li>
+                        <img class="img-responsive"  src="images/doc/tinysort.PNG" alt="">
+                        <li class="puntos-info">Visualización: </li>
+                        <img class="img-responsive"  src="images/doc/tinysort2.PNG" alt="">
+                    </ol>
+                </article>
+                <!--  END JQuery UI -->
             </section>
         </main>
     </div>

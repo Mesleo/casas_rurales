@@ -1,3 +1,16 @@
+.aceptar_atras {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.aceptar_atras input {
+    width: 47%;
+    height: 35px;
+    margin-top: 5px;
+}
+
 .aceptar_atras input:active, #mas_menos input:active {
     background-color: #6e846f;
     border: 2px inset #53834a;
@@ -18,7 +31,6 @@
     outline: none;
 }
 
-
 .campos_formularios:not(.aceptar_atras) {
     display: flex;
     flex-direction: column;
@@ -26,7 +38,9 @@
 }
 
 .campos_formularios p {
-    color: red;
+    color: #bb0000;
+    -webkit-text-stroke: 0.01em black;
+    letter-spacing: 1px;
     display: block;
     margin-left: 10px;
 }
@@ -42,18 +56,24 @@
     margin-right: 2%;
 }
 
+#dc {
+    width: 16%;
+    margin-right: 2%;
+}
 
 #div_check{
-    display: flex;
-    flex-direction: row;
+    display: block;
 }
 
 #div_check label{
-    margin-left: 2%;
+    margin-left: 4%;
+    width: 85%;
+    display: inline-block;
 }
 
 #div_check input{
 
+    display: inline-block;
 }
 
 #form_reserva {
@@ -68,17 +88,10 @@
     margin-bottom: 5px;
 }
 
-.aceptar_atras {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 2%;
-}
-
-.aceptar_atras input {
-    width: 47%;
-    height: 35px;
-    margin-top: 5px;
+#mas{
+    position: absolute;
+    right: 1%;
+    margin-left: 4%;
 }
 
 #mas_menos {
@@ -111,11 +124,11 @@ width: 30%;
     margin-left: 30%;
 }
 
-#mas{
-    position: absolute;
-    right: 1%;
-    margin-left: 4%;
+#nCuenta {
+    width: 38%;
 }
+
+
 
 @media screen and (min-width: 410px){
 
@@ -242,13 +255,28 @@ width: 30%;
         margin-top: 30px;
         margin-bottom: 50px;
         box-shadow: 2px 2px 1px 1px rgba(205, 205, 205, 0.82);
-        background-image: url("../images/fondo_formulario_desenfoque.jpg");
+        background-image: url("../images/fondo_pag_form_dif.jpg");
     }
 
     #form_reserva label, #mas_menos{
         color: black;
         font-weight: normal;
         position: relative;
+    }
+
+
+
+    html, body{
+        background-color: white;
+        background: none;
+    }
+
+    #img{
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 15px;
+        background-image: url("../images/fondo_pag_form_origin.jpg");
+        background-size: 100% 100%;
     }
 
     #mostrar_numero_personas{

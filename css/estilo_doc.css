@@ -1,40 +1,81 @@
+
+article{
+    margin-bottom: 25px;
+    box-shadow: 1px 4px 2px 1px #beccb5;
+    padding: 10px;
+    padding-bottom: 140px;
+}
+
+#validacion li>ul:last-child{
+    padding-bottom: 140px;
+}
+
 body{
-    width: 90%;
+    width: 100%;
     margin: auto;
     font-family: "Roboto";
 }
 
+
+body>header{
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    
+}
+
+
+h1{
+    font-size: 2.5em;
+}
+
 body>header, footer{
-    margin: 10px 0 20px 0;
     background-color: #2668be;
     box-shadow: 1px 4px 2px 1px #beccb5;
     padding: 10px;
     text-align: center;
 }
 
-body>header{
-    padding: 20px;
+.container{
+    padding-top: 25%;
 }
 
-article{
-    margin-bottom: 25px;
-    box-shadow: 1px 4px 2px 1px #beccb5;
-    padding: 10px;
+footer{
+    margin: 10px 0 20px 0;
 }
 
-body>header h1{
-    font-size: 2em;
+.img-responsive{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 90%;
 }
 
-.navbar-fixed-top{
-    margin: auto;
-    background-color: #0b4f3e;
+ol>li, article p{
+    font-size: 1.2em;
+}
+
+hr{
+    border: 1px outset black;
+}
+
+nav li>a{
+    color: white;
+}
+
+nav li>a:hover{
+    background-color: white;
+    color: #0b93d5;
+}
+
+.principal{
+    margin-top: -100px;
 }
 
 .puntos-info{
     margin: 35px 0 15px 0;
 }
 
-.img-responsive{
-
+.space-id{
+    height: 80px;
 }

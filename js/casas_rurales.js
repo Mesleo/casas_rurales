@@ -58,6 +58,7 @@
     }
 
     $(function(){
+
         showGalery();
         $("#destino").autocomplete({
             source: availableTags

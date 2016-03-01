@@ -8,6 +8,22 @@
         dateIn, dateOut, email, phone, bankAccount, bankEntity, bankOffice,
         bankDC, bankNumberAccount ,checkbox, message, error;
 
+    // Comprueba el evento 'blur' por cada campo del formulario
+    function initVar() {
+        name = $('#nombre');
+        lastName = $('#apellidos');
+        dni = $('#dni');
+        dateIn = $('#fechaEntrada');
+        dateOut = $('#fechaSalida');
+        email = $('#email');
+        phone = $('#telefono');
+        bankEntity = $('#entidad');
+        bankOffice = $('#oficina');
+        bankDC = $('#dc');
+        bankNumberAccount = $('#nCuenta');
+        checkbox = $('#conditions');
+    }
+
     function increasePeople(spanPeopleNumber){
         peopleNumber = Number(spanPeopleNumber.text());
         if(peopleNumber <= 11){
@@ -107,6 +123,7 @@
         }
     }
 
+    // Comprueba las fechas
     function checkInputDate(input, tagDiv){
         var d;
         input.val() == '' ? error = true : error = false;
@@ -171,7 +188,7 @@
                 info = 'Nº Cuenta: 10 dígitos';
                 break;
         }
-        input.val().length!=size || isNaN(input.val()) || input.val()<0 ? error = true : error = false;
+        input.val().length!=size || isNaN(input.val()) || input.val()<0 || input.val().indexOf('.') != -1 ? error = true : error = false;
         if(error){
             setCssInput(input, error);
             showErrorBank(bankAccount, info, id);
@@ -186,22 +203,7 @@
         !input.is(':checked') ? showError(tagDiv, 'Debes aceptar las condiciones') : showError(tagDiv, '');
     }
 
-    // Comprueba el evento 'blur' por cada campo del formulario
-    function initVar() {
-        name = $('#nombre');
-        lastName = $('#apellidos');
-        dni = $('#dni');
-        dateIn = $('#fechaEntrada');
-        dateOut = $('#fechaSalida');
-        email = $('#email');
-        phone = $('#telefono');
-        bankEntity = $('#entidad');
-        bankOffice = $('#oficina');
-        bankDC = $('#dc');
-        bankNumberAccount = $('#nCuenta');
-        checkbox = $('#conditions');
-    }
-
+    // Comprueba el foco de cada campo
     function checkBlur() {
         name.on('blur', function () {
             checkInputName(name, $('#name'));
@@ -220,8 +222,13 @@
                 checkInputDate(dateIn, $('#dateIn'));
             }
         });
-        dateOut.on('change', function(){
-            checkInputDate(dateOut, $('#dateOut'));
+        dateOut.on({
+            change: function () {
+                checkInputDate(dateOut, $('#dateOut'));
+            },
+            blur: function () {
+                checkInputDate(dateOut, $('#dateOut'));
+            }
         });
         email.on('blur', function(){
             checkInputEmail(email, $('#e-mail'));
@@ -246,10 +253,12 @@
         });
     }
 
+    // Crea la cookie
     function setCookie(nameCookie, valueCookie, exp) {
         document.cookie = nameCookie+"="+valueCookie+"; "+exp;
     }
 
+    // Devuelve el valor de la clave de la cookie pasada por parámetro
     function getCookie(nameCookie){
         var nc = nameCookie + "=";
         var ca = document.cookie.split(';');
@@ -263,9 +272,10 @@
         return "";
     }
 
+    // Cuando se hace click se comprueban todos los campos
     function checkClick() {
         $('#enviar_reserva').on('click', function (e) {
-            e.preventDefault();
+            //e.preventDefault();
             checkInputName(name, $('#name'));
             checkInputName(lastName, $('#lastName'));
             checkInputDni(dni, $('#nif'));
@@ -288,6 +298,7 @@
         });
     }
 
+    // Comprueba y asigna el valor de las cookies si las hubiera a algunos inputs
     function checkCookies(){
         name.val(getCookie(name.attr('id')));
         lastName.val(getCookie(lastName.attr('id')));

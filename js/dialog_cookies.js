@@ -23,7 +23,7 @@
     }
 
     function abrirActivarCookies(){
-        location.href = "http://www.benchmarkemail.com/es/help-FAQ/answer/como-puedo-activar-las-cookies-en-mi-navegador-web";
+        window.open("http://www.benchmarkemail.com/es/help-FAQ/answer/como-puedo-activar-las-cookies-en-mi-navegador-web", "");
     }
 
 
@@ -31,7 +31,7 @@
         setCookie("cookiePrueba", "5821", 5);
         divCookies = document.getElementById('divCookies');
         if(getCookie('cookiePrueba') != '5821'){
-            $( "#dialog-confirm" ).dialog({
+            $("#dialog-confirm" ).dialog({
                 display: 'block',
                 dialogClass: "no-close",
                 resizable: false,

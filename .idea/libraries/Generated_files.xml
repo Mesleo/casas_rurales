@@ -2,11 +2,31 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/animate_index.min.js" />
+        <item url="file://$PROJECT_DIR$/js/function_doc.min.js" />
+        <item url="file://$PROJECT_DIR$/js/tinysort.min.js" />
+        <item url="file://$PROJECT_DIR$/js/casas_rurales.min.js" />
+        <item url="file://$PROJECT_DIR$/js/formulario.min.js" />
         <item url="file://$PROJECT_DIR$/js/dialog_cookies.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery.tinysort.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery-2.2.0.min.js" />
+        <item url="file://$PROJECT_DIR$/js/lightbox.min.js" />
+        <item url="file://$PROJECT_DIR$/js/show_datepicker.min.js" />
+        <item url="file://$PROJECT_DIR$/js/tinysort.charorder.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/animate_index.min.js" />
+      <root url="file://$PROJECT_DIR$/js/function_doc.min.js" />
+      <root url="file://$PROJECT_DIR$/js/tinysort.min.js" />
+      <root url="file://$PROJECT_DIR$/js/casas_rurales.min.js" />
+      <root url="file://$PROJECT_DIR$/js/formulario.min.js" />
       <root url="file://$PROJECT_DIR$/js/dialog_cookies.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.tinysort.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-2.2.0.min.js" />
+      <root url="file://$PROJECT_DIR$/js/lightbox.min.js" />
+      <root url="file://$PROJECT_DIR$/js/show_datepicker.min.js" />
+      <root url="file://$PROJECT_DIR$/js/tinysort.charorder.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

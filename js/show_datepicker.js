@@ -1,10 +1,15 @@
 /**
- * Created by Javier Benítez del Pozo on 27/02/2016.
+ * Created by Javier  Benítez del Pozo on 27/02/2016.
  */
 
 (function(){
 
-    var lockDate;
+    var lockDate, dateIn, dateOut;
+
+    function initVar(){
+        dateIn = $("#fechaEntrada");
+        dateOut = $("#fechaSalida");
+    }
 
     // Modifico el objeto DatePicker para que se muestre con formato de fecha español
     $.datepicker.regional['es'] = {
@@ -29,12 +34,14 @@
     // La fecha de entrada debe ser a partir del día actual como mínimo
     // La fecha de salida parte del día posterior a la fecha de entrada
     function setFecha() {
-        $("#fechaEntrada").datepicker({
+        dateIn.datepicker({
             minDate: 0,
             onClose: function (selectedDate) {
+                if(!selectedDate)
+                    return;
                 lockDate = new Date($('#fechaEntrada').datepicker('getDate'));
                 lockDate.setDate(lockDate.getDate() + 1);
-                $("#fechaSalida").datepicker("option", "minDate", lockDate);
+                dateOut.datepicker("option", "minDate", lockDate);
                 if($(window).width()>683) {
                     $('.salida').css({
                         display: 'block',
@@ -46,12 +53,13 @@
                 }
             }
         }).attr('readonly','readonly');
-        $("#fechaSalida").datepicker({
+        dateOut.datepicker({
             minDate: 1
         }).attr('readonly','readonly');
     }
 
     $(function(){
+        initVar();
         $.datepicker.setDefaults($.datepicker.regional['es']);
         setFecha();
     });

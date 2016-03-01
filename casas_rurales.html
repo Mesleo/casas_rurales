@@ -22,14 +22,12 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
     <!-- Scripts -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script src="js/jquery-2.2.0.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.js" type="text/javascript"></script>
-    <script src="js/dialog_cookies.js" type="text/javascript"></script>
-    <script src="js/casas_rurales.js" type="text/javascript"></script>
-    <script src="js/show_datepicker.js" type="text/javascript"></script>
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/casas_rurales.min.js" type="text/javascript"></script>
+    <script src="js/show_datepicker.min.js" type="text/javascript"></script>
 </head>
-<body id="cuerpo">
+<body>
     <header id="cabecera">
         <h1 id="titulo_principal">Casas rurales</h1>
     </header>
@@ -101,34 +99,27 @@
             </form>
         </aside>
         <hr>
-        <main id="main">
+        <main>
             <section id="casas">
                 <article>
                     <div class="info_casa">
                         <!--Galería casa 1-->
-                        <div id="galeria-casa-1" class="galeria-lightbox">
-                            <a class="image-lightbox" href="images/cr_1.1.jpg" data-lightbox="roadtrip1">
-                                <img src="images/cr_1.1.jpg" alt="">
-                            </a>
-                            <a class="image-lightbox" href="images/cr_1.2.jpg" data-lightbox="roadtrip1">
-                                <img src="images/cr_1.2.jpg" alt="">
-                            </a>
-                            <a class="image-lightbox" href="images/cr_1.3.jpg" data-lightbox="roadtrip1">
-                                <img src="images/cr_1.3.jpg" alt="">
-                            </a>
-                        </div>
-                        <picture class="foto_casa">
-                            <source
-                                    media="(min-width: 683px)"
-                                    srcset="images/casa1_b.jpg">
-                            <source
-                                    media="(min-width: 410px)"
-                                    srcset="images/casa1_m.jpg">
-                            <source
-                                    media="(min-width: 250px)"
-                                    srcset="images/casa1_s.jpg">
-                            <img class="image" src="images/casa1_s.jpg" alt="habitación" title="habitación" />
-                        </picture>
+                        <a class="image2-lightbox" href="images/cr_1.3.jpg" data-lightbox="roadtrip1">
+                            <picture>
+                                <source
+                                        media="(min-width: 683px)"
+                                        srcset="images/cr_1.3.jpg">
+                                <source
+                                        media="(min-width: 410px)"
+                                        srcset="images/cr_1.3.jpg">
+                                <source
+                                        media="(min-width: 250px)"
+                                        srcset="images/cr_1.3.jpg">
+                                <img id="foto-casa-1" class="image" src="images/cr_1.3.jpg"  data-lightbox="roadtrip1" alt="Villa 'San Francisco'" title="Villa 'San Francisco'" />
+                            </picture>
+                        </a>
+                        <a class="image-lightbox" href="images/cr_1.1.jpg" data-lightbox="roadtrip1"></a>
+                        <a class="image-lightbox" href="images/cr_1.2.jpg" data-lightbox="roadtrip1"></a>
                         <div class="informacion">
                             <div class="primer_div_casa">
                                 <div class="wow fadeInDown animated" data-wow-duration="2s" data-wow-offset="100">
@@ -144,36 +135,33 @@
                             <div class="caracteristicas">
                                 <p id="fotos-casa-1">Fotos</p><p>Resumen</p><p>Opiniones</p><p class="mapa">Mapa</p><p>2-15 plazas</p>
                             </div>
-                            <a href="formulario.html">Reservar</a>
+                            <a class="reserva" href="formulario.html">Reservar</a>
                         </div>
                     </div>
                 </article>
                 <article>
                     <div class="info_casa">
                         <!--Galería casa 2-->
-                        <div id="galeria-casa-2" class="galeria-lightbox">
-                            <a class="image-lightbox" href="images/cr_2.1.jpg" data-lightbox="roadtrip2">
-                                <img src="images/cr_2.1.jpg" alt="">
-                            </a>
-                            <a class="image-lightbox" href="images/cr_2.2.jpg" data-lightbox="roadtrip2">
-                                <img src="images/cr_2.2.jpg" alt="">
-                            </a>
-                            <a class="image-lightbox" href="images/cr_2.3.jpg" data-lightbox="roadtrip2">
-                                <img src="images/cr_2.3.jpg" alt="">
-                            </a>
-                        </div>
-                        <picture class="foto_casa">
-                            <source
-                                    media="(min-width: 683px)"
-                                    srcset="images/casa2_b.jpg">
-                            <source
-                                    media="(min-width: 410px)"
-                                    srcset="images/casa2_m.jpg">
-                            <source
-                                    media="(min-width: 250px)"
-                                    srcset="images/casa2_s.jpg">
-                            <img class="image" src="images/casa2_s.jpg" alt="habitación" title="habitación" />
-                        </picture>
+                        <a class="image2-lightbox" href="images/cr_2.3.jpg" data-lightbox="roadtrip2">
+                            <picture>
+                                <source
+                                        media="(min-width: 683px)"
+                                        srcset="images/cr_2.3.jpg">
+                                <source
+                                        media="(min-width: 410px)"
+                                        srcset="images/cr_2.3.jpg">
+                                <source
+                                        media="(min-width: 250px)"
+                                        srcset="images/cr_2.3.jpg">
+                                <img id="foto-casa-2" class="image" src="images/cr_2.3.jpg"  data-lightbox="roadtrip2" alt="Casa rural 'La Moraleja'" title="Casa rural 'La Moraleja'" />
+                            </picture>
+                        </a>
+                        <a class="image-lightbox" href="images/cr_2.1.jpg" data-lightbox="roadtrip2">
+                            <img src="images/cr_1.1.jpg" alt="">
+                        </a>
+                        <a class="image-lightbox" href="images/cr_2.2.jpg" data-lightbox="roadtrip2">
+                            <img src="images/cr_1.2.jpg" alt="">
+                        </a>
                         <div class="informacion">
                             <div class="primer_div_casa">
                                 <div class="wow fadeInDown animated" data-wow-duration="2s" data-wow-offset="100">
@@ -189,36 +177,29 @@
                             <div class="caracteristicas">
                                 <p id="fotos-casa-2">Fotos</p><p>Resumen</p><p>Opiniones</p><p class="mapa">Mapa</p><p>2-18 plazas</p>
                             </div>
-                            <a href="formulario.html">Reservar</a>
+                            <a class="reserva" href="formulario.html">Reservar</a>
                         </div>
                     </div>
                 </article>
                 <article>
                     <div class="info_casa">
                         <!--Galería casa 3-->
-                        <div id="galeria-casa-3" class="galeria-lightbox">
-                            <a class="image-lightbox" href="images/cr_3.1.jpg" data-lightbox="roadtrip3">
-                                <img src="images/cr_3.1.jpg" alt="">
-                            </a>
-                            <a class="image-lightbox" href="images/cr_3.2.jpg" data-lightbox="roadtrip3">
-                                <img src="images/cr_3.2.jpg" alt="">
-                            </a>
-                            <a class="image-lightbox" href="images/cr_3.3.jpg" data-lightbox="roadtrip3">
-                                <img src="images/cr_3.3.jpg" alt="">
-                            </a>
-                        </div>
-                        <picture class="foto_casa">
-                            <source
-                                    media="(min-width: 683px)"
-                                    srcset="images/casa3_b.jpg">
-                            <source
-                                    media="(min-width: 410px)"
-                                    srcset="images/casa3_m.jpg">
-                            <source
-                                    media="(min-width: 250px)"
-                                    srcset="images/casa3_s.jpg">
-                            <img class="image" src="images/casa2_s.jpg" alt="habitación" title="habitación" />
-                        </picture>
+                        <a class="image2-lightbox" href="images/cr_3.3.jpg" data-lightbox="roadtrip3">
+                            <picture>
+                                <source
+                                        media="(min-width: 683px)"
+                                        srcset="images/cr_3.3.jpg">
+                                <source
+                                        media="(min-width: 410px)"
+                                        srcset="images/cr_3.3.jpg">
+                                <source
+                                        media="(min-width: 250px)"
+                                        srcset="images/cr_3.3.jpg">
+                                <img id="foto-casa-3" class="image" src="images/cr_3.3.jpg"  data-lightbox="roadtrip3" alt="Cortijo 'El Molino'" title="Casa rural 'La Moraleja'" />
+                            </picture>
+                        </a>
+                        <a class="image-lightbox" href="images/cr_3.1.jpg" data-lightbox="roadtrip3"></a>
+                        <a class="image-lightbox" href="images/cr_3.2.jpg" data-lightbox="roadtrip3"></a>
                         <div class="informacion">
                             <div class="primer_div_casa">
                                 <div class="wow fadeInDown animated" data-wow-duration="3.5s" data-wow-offset="300">
@@ -233,7 +214,7 @@
                             <div class="caracteristicas">
                                 <p id="fotos-casa-3">Fotos</p><p>Resumen</p><p>Opiniones</p><p class="mapa">Mapa</p><p>4-25 plazas</p>
                             </div>
-                            <a href="formulario.html">Reservar</a>
+                            <a class="reserva" href="formulario.html">Reservar</a>
                         </div>
                     </div>
                 </article>
@@ -241,6 +222,6 @@
         </main>
     </div>
 <footer><p>© Copyright 2016 – Javier Benítez del Pozo</p></footer>
-<script src="js/lightbox.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
