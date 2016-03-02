@@ -405,6 +405,10 @@ h1#titulo_pagina_principal {
         padding: 5px;
     }
 
+    .pajaro, .pajaro2{
+        display: none;
+    }
+
     #principal p {
         font-size: 18px;
     }

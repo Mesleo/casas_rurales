@@ -195,10 +195,9 @@
                         </li>
                         <hr>
                         <li class="puntos-info"><strong>Fechas: </strong>En los campos de fechas no he utilizado expresiones regulares, simplemente compruebo cuando
-                            se pierde el foco o se presiona el botón "Aceptar" que se haya seleccionado una fecha. Como hago uso del objeto
-                            de jQuery Datepicker le añado unos atributos y funciones para que no se pueda elegir una fecha anterior a hoy como fecha de entrada y,
-                            en la fecha de salida, no se puede elegir un día anterior a mañana o, si ya se ha elegido fecha de entrada, anterior a la fecha escogida
-                            en ese campo.
+                            se pierde el foco o se presiona el botón "Aceptar" que se haya seleccionado una fecha. Como hago uso del objeto jQuery Datepicker, le
+                            añado unos atributos y funciones para que no se pueda elegir una fecha anterior a hoy como fecha de entrada y, en la fecha de salida, no
+                            permito elegir un día anterior a mañana o, si ya se ha elegido fecha de entrada, anterior a la fecha escogida en el campo "fecha de entrada".
                             <ul>
                                 <li>Compruebo que se haya seleccionado alguna fecha:</li>
                                 <img class="img-responsive"  src="images/doc/val-fecha01.PNG" alt="">
@@ -236,7 +235,7 @@
                         <hr>
                         <li class="puntos-info"><strong>Teléfono: </strong> También lo compruebo mediante expresión regular, nueve números. No
                             permito espacios entre los números, ni ningún otro separador. Además, uso un input de tipo "number" de HTML5 que aunque
-                            no funciona en todos los navegadores, impide en la insercción de caracteres no númericos.
+                            no funciona en todos los navegadores, impide la insercción de caracteres no númericos.
                             <ul>
                                 <li>Válido:</li>
                                 <img class="img-responsive"  src="images/doc/val-telf01.PNG" alt="">
@@ -304,8 +303,8 @@
                 <article>
                     <h2 class="name">Plugin Tinysort</h2>
                     <ol>
-                        <li class="puntos-info">Este plugin sirve para ordenar elementos dentro de otro elemento del DOM. Se puede ordenar alfabé
-                        ticamente o alfebéticamente y numéricamente.</li>
+                        <li class="puntos-info">Este plugin sirve para ordenar elementos dentro de otro elemento del DOM. Se puede ordenar
+                            alfabéticamente o alfabéticamente y numéricamente.</li>
                         <li class="puntos-info">Versión: 2.2.4</li>
                         <li class="puntos-info">Se puede descargar <a href="http://tinysort.sjeiti.com/">aquí</a>.</li>
                         <li class="puntos-info">Lo utilizo en la página del formulario para los errores de la cuenta bancaria. Como son 4 campos distintos,
